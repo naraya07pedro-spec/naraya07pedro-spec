@@ -6,7 +6,8 @@ Indonesia · Open to remote and international technical roles
 I build reliable workflow automation, API integrations, backend orchestration, and controlled AI-assisted systems. My focus is practical implementation: turning operational requirements into systems that are inspectable, testable, and safer to run.
 
 [![Website](https://img.shields.io/badge/Website-varevant.com-0A0A0A?style=flat-square)](https://varevant.com)
-[![Email](https://img.shields.io/badge/Email-naraya07pedro%40gmail.com-0A0A0A?style=flat-square)](mailto:naraya07pedro@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Evan%20Naraya-0A0A0A?style=flat-square)](https://www.linkedin.com/in/evannaraya)
+[![Email](https://img.shields.io/badge/Email-evan%40varevant.com-0A0A0A?style=flat-square)](mailto:evan@varevant.com)
 [![Remote](https://img.shields.io/badge/Open%20to-Remote%20Technical%20Roles-0A0A0A?style=flat-square)](#open-to)
 
 ## Engineering focus
@@ -85,4 +86,5 @@ The repositories linked above intentionally expose reviewable engineering patter
 
 **Best place to start:** [Reliable Lead Routing reference implementation](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/reliable-lead-routing)  
 **Business / engineering site:** [varevant.com](https://varevant.com)  
-**Contact:** [naraya07pedro@gmail.com](mailto:naraya07pedro@gmail.com)
+**LinkedIn:** [linkedin.com/in/evannaraya](https://www.linkedin.com/in/evannaraya)  
+**Contact:** [evan@varevant.com](mailto:evan@varevant.com)
