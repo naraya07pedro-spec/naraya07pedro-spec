@@ -1,91 +1,34 @@
 # Evan Naraya
 
-**Automation & Integration Engineer**  
-Indonesia · Open to remote and international technical roles
+**Automation & Integration Engineer** · Indonesia · Open to remote roles
 
-I build reliable workflow automation, API integrations, backend orchestration, and controlled AI-assisted systems. My focus is practical implementation: turning operational requirements into systems that are inspectable, testable, and safer to run.
+I build workflow automation, API/webhook integrations, database-backed orchestration,
+and AI-assisted workflows with deterministic validation and human-review boundaries.
 
-[![Website](https://img.shields.io/badge/Website-varevant.com-0A0A0A?style=flat-square)](https://varevant.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Evan%20Naraya-0A0A0A?style=flat-square)](https://www.linkedin.com/in/evannaraya)
-[![Email](https://img.shields.io/badge/Email-evan%40varevant.com-0A0A0A?style=flat-square)](mailto:evan@varevant.com)
-[![Remote](https://img.shields.io/badge/Open%20to-Remote%20Technical%20Roles-0A0A0A?style=flat-square)](#open-to)
+[Website](https://varevant.com) · [LinkedIn](https://www.linkedin.com/in/evannaraya) · [Contact](mailto:evan@varevant.com)
 
-## Engineering focus
+## Engineering proof — start here
 
-- **API & webhook integration** — request/response flows, validation, routing, failure handling, and system-to-system handoffs.
-- **Workflow automation** — n8n-oriented orchestration, deterministic gates, state transitions, retries, and operational safeguards.
-- **Backend systems** — JavaScript, PostgreSQL/Supabase-backed state, structured payloads, and implementation logic.
-- **Reliable AI-assisted workflows** — AI is bounded by validation, confidence thresholds, permissions, and human-review fallbacks.
-- **Technical QA & documentation** — making behavior reviewable through tests, architecture notes, production-safety boundaries, and handoff documentation.
+| Review order | What you can inspect |
+| --- | --- |
+| **1. [Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript, raw-byte HMAC, PostgreSQL atomic reservation, HTTP timeouts/retries, and persisted outcomes. [Handler](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/src/handler.ts) · [Tests](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/tests) · [CI](https://github.com/naraya07pedro-spec/production-integration-reference/actions/workflows/ci.yml) |
+| **2. [Reliable Lead Routing](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/reliable-lead-routing)** | Runnable Node.js reference: validation, suppression, region gates, bounded classification, manual-review fallback, retries. |
+| **3. [BIMMCA Intelligence](https://github.com/naraya07pedro-spec/bimmca-intelligence)** | Supabase-backed monitoring dashboard; public application code and documented automation architecture. |
+| **4. [VAREVANT engineering surface](https://github.com/naraya07pedro-spec/varevant.com)** | [Technical review guide](https://github.com/naraya07pedro-spec/varevant.com/blob/main/docs/TECHNICAL-REVIEW.md), system decisions, and delivery boundaries. |
 
-**Core technical surface:** TypeScript/JavaScript · Node.js · REST APIs · Webhooks · PostgreSQL · Supabase · n8n orchestration · HMAC verification · durable idempotency · retry classification · Git · JSON · human approval boundaries
+**Core public stack:** TypeScript/JavaScript · Node.js · REST APIs · Webhooks · PostgreSQL/Supabase · n8n orchestration.
 
-## Selected engineering work
+## Reliability and evidence
 
-| Project | What it demonstrates | Review |
-| --- | --- | --- |
-| **Production Integration Reference** | TypeScript + PostgreSQL implementation for HMAC webhook verification, atomic idempotency reservation, REST integration, retry classification, structured logging, tests, and a sanitized n8n export. | [README](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/production-integration-reference) · [Handler](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/production-integration-reference/src/handler.ts) · [Tests](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/production-integration-reference/tests) |
-| **Reliable Lead Routing** | Testable Node.js reference implementation for normalization, validation, suppression, region gates, bounded classification, manual-review fallback, and retry behavior. | [README](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/reliable-lead-routing) · [Code](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/reliable-lead-routing/workflow.js) · [Tests](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/reliable-lead-routing/workflow.test.js) |
-| **BIMMCA Intelligence** | Supabase-backed monitoring and decision-support application fed by a structured n8n monitoring architecture. | [Repository](https://github.com/naraya07pedro-spec/bimmca-intelligence) |
-| **VAREVANT Engineering** | Public engineering surface for workflow automation, backend integration, bounded AI systems, technical review, production-safety thinking, and white-label implementation. | [Repository](https://github.com/naraya07pedro-spec/varevant.com) · [Technical Review](https://github.com/naraya07pedro-spec/varevant.com/blob/main/docs/TECHNICAL-REVIEW.md) |
+The flagship has unit/HTTP tests, real PostgreSQL CI tests, and a signed synthetic end-to-end demo.
+Its [n8n artifact](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/n8n) is inactive and credential-free; n8n runtime execution remains unverified.
+A [historical debugging case](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/docs/debugging-case.md) links to actual state-loss and repair commits.
 
-## Five-minute technical review path
+These are public engineering references and application artifacts. They do not establish client production usage,
+business impact, uptime, or production execution counts.
 
-If you are reviewing my work for an engineering role, this is the fastest path:
+## Role fit
 
-1. **Inspect the production-style integration reference:** [`examples/production-integration-reference/`](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/production-integration-reference)
-2. **Inspect the bounded AI routing reference:** [`examples/reliable-lead-routing/`](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/reliable-lead-routing)
-3. **Review system decisions:** [`docs/TECHNICAL-REVIEW.md`](https://github.com/naraya07pedro-spec/varevant.com/blob/main/docs/TECHNICAL-REVIEW.md)
-4. **Review production boundaries:** [`docs/PRODUCTION-SAFETY.md`](https://github.com/naraya07pedro-spec/varevant.com/blob/main/docs/PRODUCTION-SAFETY.md)
-5. **Inspect a Supabase-backed application:** [`bimmca-intelligence`](https://github.com/naraya07pedro-spec/bimmca-intelligence)
+Automation · Integration · n8n Development · Technical Implementation · Backend Automation · Solutions Implementation · AI/Agentic Engineering.
 
-## How I approach implementation
-
-```text
-Understand the current process
-        ↓
-Identify the failure / bottleneck
-        ↓
-Separate deterministic controls from probabilistic logic
-        ↓
-Build the smallest reliable implementation
-        ↓
-Test failure paths, retries, duplicates, and fallbacks
-        ↓
-Document assumptions and production boundaries
-```
-
-I prefer systems where critical rules remain deterministic and AI is used only where interpretation adds value. That means hard gates, validation, suppression, idempotency, permissions, and safety checks should not depend on model output.
-
-## What I can contribute
-
-- Building and debugging API / webhook integrations
-- Implementing operational workflows and internal automation
-- Connecting SaaS tools, databases, and backend services
-- Designing deterministic validation and routing logic
-- Investigating failure paths and improving reliability
-- Creating technical documentation and handoff material
-- Supporting implementation-heavy customer or developer workflows
-
-## Open to
-
-I am particularly interested in remote roles such as:
-
-- **Integration Engineer / Integration Specialist**
-- **Implementation Engineer / Technical Implementation**
-- **Technical Support Engineer / Developer Support**
-- **Automation Engineer / Workflow Automation**
-- **Technical Operations / Solutions Implementation**
-
-I am based in Indonesia and open to global remote teams, APAC roles, and international contractor arrangements where eligible.
-
-## Public proof boundaries
-
-The repositories linked above intentionally expose reviewable engineering patterns without publishing credentials, private client data, confidential workflow exports, or unsupported client/outcome claims.
-
----
-
-**Best place to start:** [Production Integration Reference](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/production-integration-reference)  
-**Business / engineering site:** [varevant.com](https://varevant.com)  
-**LinkedIn:** [linkedin.com/in/evannaraya](https://www.linkedin.com/in/evannaraya)  
-**Contact:** [evan@varevant.com](mailto:evan@varevant.com)
+Available for remote teams and international contractor arrangements where eligible.
