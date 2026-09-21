@@ -18,13 +18,14 @@ I build reliable workflow automation, API integrations, backend orchestration, a
 - **Reliable AI-assisted workflows** — AI is bounded by validation, confidence thresholds, permissions, and human-review fallbacks.
 - **Technical QA & documentation** — making behavior reviewable through tests, architecture notes, production-safety boundaries, and handoff documentation.
 
-**Core technical surface:** JavaScript · Node.js · REST APIs · Webhooks · PostgreSQL · Supabase · n8n orchestration · Git · JSON · deterministic validation · retries · deduplication · logging patterns · human approval boundaries
+**Core technical surface:** TypeScript/JavaScript · Node.js · REST APIs · Webhooks · PostgreSQL · Supabase · n8n orchestration · HMAC verification · durable idempotency · retry classification · Git · JSON · human approval boundaries
 
 ## Selected engineering work
 
 | Project | What it demonstrates | Review |
 | --- | --- | --- |
-| **Reliable Lead Routing** | Testable Node.js reference implementation for normalization, validation, suppression, region gates, idempotency, bounded classification, manual-review fallback, and retry behavior. | [README](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/reliable-lead-routing) · [Code](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/reliable-lead-routing/workflow.js) · [Tests](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/reliable-lead-routing/workflow.test.js) |
+| **Production Integration Reference** | TypeScript + PostgreSQL implementation for HMAC webhook verification, atomic idempotency reservation, REST integration, retry classification, structured logging, tests, and a sanitized n8n export. | [README](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/production-integration-reference) · [Handler](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/production-integration-reference/src/handler.ts) · [Tests](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/production-integration-reference/tests) |
+| **Reliable Lead Routing** | Testable Node.js reference implementation for normalization, validation, suppression, region gates, bounded classification, manual-review fallback, and retry behavior. | [README](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/reliable-lead-routing) · [Code](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/reliable-lead-routing/workflow.js) · [Tests](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/reliable-lead-routing/workflow.test.js) |
 | **BIMMCA Intelligence** | Supabase-backed monitoring and decision-support application fed by a structured n8n monitoring architecture. | [Repository](https://github.com/naraya07pedro-spec/bimmca-intelligence) |
 | **VAREVANT Engineering** | Public engineering surface for workflow automation, backend integration, bounded AI systems, technical review, production-safety thinking, and white-label implementation. | [Repository](https://github.com/naraya07pedro-spec/varevant.com) · [Technical Review](https://github.com/naraya07pedro-spec/varevant.com/blob/main/docs/TECHNICAL-REVIEW.md) |
 
@@ -32,8 +33,8 @@ I build reliable workflow automation, API integrations, backend orchestration, a
 
 If you are reviewing my work for an engineering role, this is the fastest path:
 
-1. **Inspect the implementation:** [`examples/reliable-lead-routing/`](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/reliable-lead-routing)
-2. **Run the tests:** `node --test examples/reliable-lead-routing/workflow.test.js`
+1. **Inspect the production-style integration reference:** [`examples/production-integration-reference/`](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/production-integration-reference)
+2. **Inspect the bounded AI routing reference:** [`examples/reliable-lead-routing/`](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/reliable-lead-routing)
 3. **Review system decisions:** [`docs/TECHNICAL-REVIEW.md`](https://github.com/naraya07pedro-spec/varevant.com/blob/main/docs/TECHNICAL-REVIEW.md)
 4. **Review production boundaries:** [`docs/PRODUCTION-SAFETY.md`](https://github.com/naraya07pedro-spec/varevant.com/blob/main/docs/PRODUCTION-SAFETY.md)
 5. **Inspect a Supabase-backed application:** [`bimmca-intelligence`](https://github.com/naraya07pedro-spec/bimmca-intelligence)
@@ -84,7 +85,7 @@ The repositories linked above intentionally expose reviewable engineering patter
 
 ---
 
-**Best place to start:** [Reliable Lead Routing reference implementation](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/reliable-lead-routing)  
+**Best place to start:** [Production Integration Reference](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/production-integration-reference)  
 **Business / engineering site:** [varevant.com](https://varevant.com)  
 **LinkedIn:** [linkedin.com/in/evannaraya](https://www.linkedin.com/in/evannaraya)  
 **Contact:** [evan@varevant.com](mailto:evan@varevant.com)
