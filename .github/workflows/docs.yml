@@ -1,0 +1,16 @@
+name: Documentation checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check Markdown targets
+        run: python scripts/check-docs.py
+      - name: Check whitespace
+        run: git diff --check HEAD^ HEAD
