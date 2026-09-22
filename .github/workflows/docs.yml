@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
       - name: Check Markdown targets
         run: python scripts/check-docs.py
       - name: Check whitespace
