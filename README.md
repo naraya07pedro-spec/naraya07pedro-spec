@@ -1,6 +1,6 @@
 # Evan Naraya
 
-**AI Automation Engineer | n8n Expert | API & Integration Systems**  
+**AI Automation Engineer | n8n Expert | API & Integration Systems**
 Indonesia · Open to remote / international opportunities
 
 I design and implement automation systems where **n8n is the orchestration layer**, not just a no-code tool. My work centers on API/webhook integration, stateful workflow design, deterministic controls, failure handling, and AI-assisted execution that can be inspected, debugged, and handed over cleanly.
@@ -45,9 +45,12 @@ I use n8n for more than linear task automation. The public evidence across my re
 
 ## Core technical surface
 
-**Automation & integration:** n8n · REST APIs · Webhooks · JSON · CRM / operational workflows  
-**Backend & data:** PostgreSQL · Supabase · JavaScript · TypeScript · persisted workflow state  
-**Reliability:** validation · idempotency · deduplication · retries · failure handling · logging · debugging · testing · CI  
+**Automation & integration:** n8n · REST APIs · Webhooks · JSON · CRM / operational workflows
+
+**Backend & data:** PostgreSQL · Supabase · JavaScript · TypeScript · persisted workflow state
+
+**Reliability:** validation · idempotency · deduplication · retries · failure handling · logging · debugging · testing · CI
+
 **AI systems:** LLM API integration · tool/function calling · structured output · bounded agents · deterministic guardrails
 
 ## Engineering approach
