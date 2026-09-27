@@ -4,8 +4,10 @@ Public-safe summaries of real client engagements. These notes intentionally sepa
 
 ## PT Geget Gigit
 
-**Country:** Indonesia  
-**Engagement:** Freelance AI Automation Engineer  
+**Country:** Indonesia
+
+**Engagement:** Freelance AI Automation Engineer
+
 **Scope:** AI-powered CMO automation agent for a marketing business.
 
 ### Publicly stated work
@@ -21,8 +23,10 @@ No unsupported ROI, production-volume, or performance claims are made.
 
 ## EZUmrah
 
-**Country:** Malaysia  
-**Engagement:** Freelance AI Automation & Integration Engineer  
+**Country:** Malaysia
+
+**Engagement:** Freelance AI Automation & Integration Engineer
+
 **Scope:** End-to-end AI automation and integration system for an Umrah travel business.
 
 ### Publicly stated work
