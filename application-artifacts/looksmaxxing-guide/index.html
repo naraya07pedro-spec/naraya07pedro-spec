@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Looksmax Score Calculator Prototype</title>
+  <meta name="description" content="A tiny client-side prototype for the manual weighted Looksmax Score described on looksmaxxing.guide." />
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { margin:0; background:#0b0d10; color:#f5f7fa; }
+    main { max-width:760px; margin:0 auto; padding:48px 20px 72px; }
+    .eyebrow { color:#98a2b3; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+    h1 { font-size:clamp(32px,6vw,54px); line-height:1; margin:10px 0 14px; }
+    .intro { color:#c7ccd4; line-height:1.6; max-width:680px; }
+    .card { margin-top:28px; border:1px solid #252a32; border-radius:18px; background:#11151b; padding:22px; }
+    .row { display:grid; grid-template-columns:1fr 120px 44px; gap:14px; align-items:center; padding:13px 0; border-bottom:1px solid #21262d; }
+    .row:last-of-type { border-bottom:0; }
+    label { font-weight:650; }
+    small { display:block; color:#8f98a6; font-weight:400; margin-top:4px; }
+    input[type=range] { width:100%; accent-color:#f5f7fa; }
+    output { font-variant-numeric:tabular-nums; text-align:right; font-weight:700; }
+    .score { display:flex; justify-content:space-between; gap:20px; align-items:end; border-top:1px solid #2b313a; margin-top:18px; padding-top:22px; }
+    .score strong { font-size:52px; line-height:1; }
+    .next { margin-top:12px; color:#d7dce3; line-height:1.5; }
+    .note { margin-top:22px; font-size:13px; color:#8f98a6; line-height:1.5; }
+    @media (max-width:620px){ .row{grid-template-columns:1fr 42px}.row input{grid-column:1/-1}.score{align-items:start;flex-direction:column}.score strong{font-size:44px} }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Task prototype · looksmaxxing.guide</div>
+  <h1>Looksmax Score Calculator</h1>
+  <p class="intro">A lightweight interactive version of the site's manual six-category weighted score. Move the sliders to calculate a score and surface the lowest-scoring category as the next area to review.</p>
+
+  <section class="card" id="calculator">
+    <div class="row"><label for="face">Facial Harmony <small>25% weight</small></label><input id="face" type="range" min="1" max="10" step="1" value="6"><output for="face">6</output></div>
+    <div class="row"><label for="fitness">Physique & Fitness <small>20% weight</small></label><input id="fitness" type="range" min="1" max="10" step="1" value="6"><output for="fitness">6</output></div>
+    <div class="row"><label for="skin">Skin Quality <small>15% weight</small></label><input id="skin" type="range" min="1" max="10" step="1" value="6"><output for="skin">6</output></div>
+    <div class="row"><label for="hair">Hair <small>15% weight</small></label><input id="hair" type="range" min="1" max="10" step="1" value="6"><output for="hair">6</output></div>
+    <div class="row"><label for="grooming">Grooming & Style <small>15% weight</small></label><input id="grooming" type="range" min="1" max="10" step="1" value="6"><output for="grooming">6</output></div>
+    <div class="row"><label for="jawline">Jawline Definition <small>10% weight</small></label><input id="jawline" type="range" min="1" max="10" step="1" value="6"><output for="jawline">6</output></div>
+
+    <div class="score">
+      <div><div class="eyebrow">Weighted score</div><strong id="score">60</strong><span>/100</span></div>
+      <div><div class="eyebrow">Lowest category</div><div class="next" id="next">All categories are currently tied.</div></div>
+    </div>
+    <p class="note">Prototype only. Self-assessment, not medical advice. The weights mirror the manual scoring method currently described on looksmaxxing.guide.</p>
+  </section>
+</main>
+<script>
+const fields = [
+  {id:'face', label:'Facial Harmony', weight:.25},
+  {id:'fitness', label:'Physique & Fitness', weight:.20},
+  {id:'skin', label:'Skin Quality', weight:.15},
+  {id:'hair', label:'Hair', weight:.15},
+  {id:'grooming', label:'Grooming & Style', weight:.15},
+  {id:'jawline', label:'Jawline Definition', weight:.10}
+];
+const scoreEl = document.getElementById('score');
+const nextEl = document.getElementById('next');
+
+function update(){
+  let total = 0;
+  let min = Infinity;
+  let lows = [];
+  for (const f of fields){
+    const input = document.getElementById(f.id);
+    const value = Number(input.value);
+    input.nextElementSibling.value = value;
+    total += value * f.weight;
+    if (value < min){ min = value; lows = [f.label]; }
+    else if (value === min){ lows.push(f.label); }
+  }
+  scoreEl.textContent = Math.round(total * 10);
+  nextEl.textContent = lows.length === fields.length
+    ? 'All categories are currently tied.'
+    : `Review ${lows.join(' / ')} first — it is your lowest self-rated category.`;
+}
+document.getElementById('calculator').addEventListener('input', update);
+update();
+</script>
+</body>
+</html>
