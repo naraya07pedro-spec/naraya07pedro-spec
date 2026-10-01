@@ -25,6 +25,6 @@ VAREVANT already owns the operational workflow context, so the n8n pack lives th
 | Export associated with a visible execution | Links one exact revision to its executed path | n8n JSON + matching execution view/date | Remove bindings, account identifiers and payload PII | Exact source-to-runtime association |
 | Previously failing handler succeeding after a documented change | Demonstrates recovery | Same path's before/after execution views + patch | Hide inputs, tokens and identities | Defensible recovery case |
 | Client-approved technical scope/handoff note | Makes client delivery technically inspectable | Project notes, accepted handoff or architecture excerpt | Client permission for the actual content | Concrete adapters, responsibility and controls |
-| Public-safe full-canvas capture | Adds whole-workflow visual proof | Original master image already exists in stored evidence | Sender label/annotation needs review/redaction | Full topology without sender identity |
+| Public-safe full-canvas capture | Adds whole-workflow visual proof | Master capture referenced by the historical gallery, or a new full-canvas screenshot | Sender label/annotation needs review/redaction | Full topology without sender identity |
 
 No additional video is required to prove states already visible in screenshots. A video adds evidence if it shows a matching revision, a meaningful executed path and a privacy-safe result.
