@@ -1,51 +1,40 @@
-# Selected Client Work
+# Selected client delivery
 
-Public-safe summaries of real client engagements. These notes intentionally separate **verified engagement scope** from details that are private, confidential, or not supported by public evidence.
+Two engagements described by Evan. These notes document delivery scope; no client source code, execution log, acceptance record or result metric is publicly attached. The technical references linked below are separate implementations.
 
-## PT Geget Gigit
+## PT Geget Gigit — Indonesia
 
-**Country:** Indonesia
+**Role:** Freelance AI Automation Engineer
+**Client context:** marketing business
+**Responsibility and system:** designed and implemented an AI-powered CMO automation agent for marketing operations and decision workflows.
 
-**Engagement:** Freelance AI Automation Engineer
+The public scope establishes the type of system Evan delivered. It does not establish a particular model, autonomous tool permission, n8n topology, API adapter, reliability control or client outcome. Those details need client-safe supporting material before they can be stated technically.
 
-**Scope:** AI-powered CMO automation agent for a marketing business.
+## EZUmrah — Malaysia
 
-### Publicly stated work
-- Designed and implemented an AI-powered CMO automation agent.
-- Focused the system on marketing operations and decision workflows.
+**Role:** Freelance AI Automation & Integration Engineer
+**Client context:** Umrah travel business
+**Responsibility and system:** designed and implemented an end-to-end AI automation and integration system connecting operational workflows.
 
-### Boundary
-Detailed workflow logic, integrations, data, credentials, client process maps, and commercial outcomes are not published here.
+Specific connected applications, data contracts, retry behavior, approval controls and handoff artifacts are not publicly documented; no booking, cost-saving or revenue result is claimed.
 
-No unsupported ROI, production-volume, or performance claims are made.
+## Available evidence
 
----
+| Review question | Public evidence now |
+| --- | --- |
+| What did Evan own? | The design/implementation scopes stated above. |
+| What process was replaced? | The exact prior process is not published. |
+| How do the systems automate and integrate? | High-level system purpose only; no client architecture/export supplied. |
+| How are failures, AI permissions and approvals handled? | Not established by these client notes. |
+| What was handed over? | No client-safe acceptance or handoff artifact supplied. |
+| Can a reviewer inspect Evan's technical approach? | Yes, through the separate internal workflow and tested references below. |
 
-## EZUmrah
+Credentials, customer data, private process maps, confidential API details and commercial terms are not included. A future client-safe note should add only facts supported by permission-safe artifacts, not borrow controls or outcomes from a reference implementation.
 
-**Country:** Malaysia
+## Separate engineering proof
 
-**Engagement:** Freelance AI Automation & Integration Engineer
+1. [Historical n8n source and control tests](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n) — internal VAREVANT artifact.
+2. [TypeScript / PostgreSQL integration reference](https://github.com/naraya07pedro-spec/production-integration-reference) — synthetic runnable reference.
+3. [Historical n8n execution gallery](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/docs/operational-evidence) — visible states from separate internal revisions.
 
-**Scope:** End-to-end AI automation and integration system for an Umrah travel business.
-
-### Publicly stated work
-- Designed and implemented an end-to-end AI automation and integration system.
-- Connected operational workflows into a unified automation layer.
-
-### Boundary
-Detailed workflow architecture, integrations, data, credentials, client process maps, and commercial outcomes are not published here.
-
-No unsupported ROI, production-volume, or performance claims are made.
-
----
-
-## Why the technical detail is intentionally limited
-
-Client delivery can be real without every implementation detail being public. Private workflows can contain operating logic, credentials, data contracts, customer information, or business-specific process design that should not be exposed for portfolio optics.
-
-For deeper technical review, use the public engineering references:
-
-- [Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)
-- [Operational n8n Evidence](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/docs/operational-evidence)
-- [VAREVANT Engineering](https://github.com/naraya07pedro-spec/varevant.com)
+These links demonstrate engineering work without representing it as either client's private system.
