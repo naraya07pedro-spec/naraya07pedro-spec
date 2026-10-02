@@ -11,7 +11,7 @@ I build automation around explicit state, predictable gates and inspectable fail
 | Inspect | What you can verify |
 | --- | --- |
 | **[n8n workflow engineering](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n)** | Sanitized historical workflow, extracted Code nodes, claim/commit checks, bounce handling and offline tests. |
-| [Historical n8n execution evidence](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/docs/operational-evidence) | Successful stop path, no-send routing, a visible failure and execution history. |
+| **[Source → execution and handler recovery](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n/runtime-evidence)** | Strong V6 workflow/path match, full-canvas topology, and a bounded V19 failure/patch/passing-handler case. Exact runtime snapshot remains unverified. |
 | **[API / PostgreSQL reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | Signed webhooks, atomic reservation, classified HTTP retries, tests and CI. |
 | [Client delivery notes](CLIENT-WORK.md) | PT Geget Gigit and EZUmrah: engagement scope with a clear privacy boundary. |
 | [Supabase / Realtime consumer](https://github.com/naraya07pedro-spec/bimmca-intelligence) | Actual browser query/render code, error/empty/stale states and offline tests. |
@@ -21,7 +21,7 @@ I build automation around explicit state, predictable gates and inspectable fail
 - **PT Geget Gigit — Indonesia:** freelance AI Automation Engineer; built an AI-powered CMO automation agent for marketing operations.
 - **EZUmrah — Malaysia:** freelance AI Automation & Integration Engineer; built an end-to-end AI automation and integration system for an Umrah travel business.
 
-These are engagement-scope notes. Public reference code and internal VAREVANT artifacts are separate from these private client implementations. [Read the scope and evidence available](CLIENT-WORK.md).
+These are **Level 5 engagement-scope notes**, based on my own statement. Public reference code and internal VAREVANT artifacts are separate from these private client implementations. [Read the scope and evidence available](CLIENT-WORK.md).
 
 ## Engineering depth to inspect
 

@@ -1,6 +1,6 @@
 # Selected client delivery
 
-Two engagements described by Evan. These notes document delivery scope; no client source code, execution log, acceptance record or result metric is publicly attached. The technical references linked below are separate implementations.
+Two engagements described by Evan. Both remain **Level 5: Evan's own scope statement**, after targeted artifact, archive and connected Drive searches on 2026-10-02. No attributable client source code, execution log, accepted technical handoff or result metric was found for publication. The technical references linked below are separate implementations. [Search findings and precise missing materials](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/SEARCH-AND-GAPS.md).
 
 ## PT Geget Gigit — Indonesia
 
