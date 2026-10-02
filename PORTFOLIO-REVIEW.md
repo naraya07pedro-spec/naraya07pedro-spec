@@ -1,30 +1,34 @@
 # Portfolio review map
 
-Reviewed 2026-10-01. Repository source and CI history take precedence over titles, interface copy or filenames.
+Reviewed 2026-10-02. Source, visible run state and CI take precedence over titles, interface copy or filenames.
 
 | Public repository | Role | Open first | Boundary |
 | --- | --- | --- | --- |
-| [Profile](https://github.com/naraya07pedro-spec/naraya07pedro-spec) | Recruiter evidence index | [README](README.md) | Client scope is not public runtime proof. |
-| [VAREVANT](https://github.com/naraya07pedro-spec/varevant.com) | Flagship n8n source + delivery surface | [n8n review pack](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n) | Historical export, selected offline tests and documented limitations. |
+| [Profile](https://github.com/naraya07pedro-spec/naraya07pedro-spec) | Recruiter evidence index | [README](README.md) | Client scope remains Level 5. |
+| [VAREVANT](https://github.com/naraya07pedro-spec/varevant.com) | Flagship n8n source + runtime evidence + delivery surface | [n8n review pack](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n) | Historical source and bounded visible-path associations; exact runtime snapshot unverified. |
 | [Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference) | Strong backend/reliability proof | Handler → SQL reservation → tests/CI | Synthetic reference; separate historical screenshot gallery. |
 | [BIMMCA Intelligence](https://github.com/naraya07pedro-spec/bimmca-intelligence) | Supporting application proof | Browser source → tests → architecture | Consumer only; ingestion, database policies and metric provenance unverified. |
 | [3D Assets](https://github.com/naraya07pedro-spec/3d-assets) | Archived asset storage | Asset README | De-emphasized for automation roles. |
 
-VAREVANT already owns the operational workflow context, so the n8n pack lives there rather than duplicating evidence in a new repository. The maintained backend reference remains separate from its older VAREVANT source copy.
+The n8n pack stays in VAREVANT. The maintained backend reference remains separate from its older VAREVANT source copy. No new repository or website redesign was introduced.
 
 ## Reviewer paths
 
-**30 seconds:** profile headline → first proof link → claim/error control code → execution gallery.
+**30 seconds:** profile headline → n8n proof link → runtime package's evidence table → V6 source/path match.
 
-**Five minutes:** n8n architecture and extracted controls → test cases → failure-mode limits → backend reservation and CI → client scope → BIMMCA consumer contract.
+**Five minutes:** full-canvas overview → V6 matching signals/false branch → V19 failure, exact archived node diff and passing handler → original claim/error controls and offline tests → concurrency limits → backend SQL/CI → client evidence level.
 
-## Proof still needed
+## Evidence completion
 
-| Artifact | Why it matters | Likely source / format | Privacy boundary | Enables |
-| --- | --- | --- | --- | --- |
-| Export associated with a visible execution | Links one exact revision to its executed path | n8n JSON + matching execution view/date | Remove bindings, account identifiers and payload PII | Exact source-to-runtime association |
-| Previously failing handler succeeding after a documented change | Demonstrates recovery | Same path's before/after execution views + patch | Hide inputs, tokens and identities | Defensible recovery case |
-| Client-approved technical scope/handoff note | Makes client delivery technically inspectable | Project notes, accepted handoff or architecture excerpt | Client permission for the actual content | Concrete adapters, responsibility and controls |
-| Public-safe full-canvas capture | Adds whole-workflow visual proof | Master capture referenced by the historical gallery, or a new full-canvas screenshot | Sender label/annotation needs review/redaction | Full topology without sender identity |
+| Gap | Current result | Boundary |
+| --- | --- | --- |
+| Source → execution | [STRONG V6 workflow/path match](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/SOURCE-TO-EXECUTION.md) | Private workflow-ID equality, source positions and visible stop branch. Exact executed Code-node bodies/version unavailable. |
+| Failure → patch → passing path | [Bounded handler recovery](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/RECOVERY-CASE.md) | Same V19-family error route, generated source correction and green V19.1 handler. Exact imported variant, replay inputs and complete Success record unavailable. |
+| Full-canvas visual | [Sanitized original V7 canvas](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/images/full-canvas-v7.webp) | Editor topology overview from another revision; small labels, no execution claim. |
+| Client technical handoff | [Client notes](CLIENT-WORK.md) remain Level 5 after targeted searches | No attributable accepted technical handoff or public client system mapping found. |
+| Video/PDF | [Review and publication decision](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/SEARCH-AND-GAPS.md) | Safe crops possible; separate workflow does not close the priority source/recovery/client gaps. |
+| Metadata/pins | [Exact manual steps and copy](GITHUB-DISCOVERABILITY.md) | Current connector cannot change repository metadata or pins; no completed change claimed. |
 
-No additional video is required to prove states already visible in screenshots. A video adds evidence if it shows a matching revision, a meaningful executed path and a privacy-safe result.
+## Exact material still needed
+
+The [search record and USER MATERIAL REQUIRED table](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/SEARCH-AND-GAPS.md) specify only: saved V6 execution with its embedded source; saved V19.1 passing-handler execution with final status; and one accepted, public-safe implementation/handoff excerpt for each client. No additional full-canvas image or generic promotional video is needed.
