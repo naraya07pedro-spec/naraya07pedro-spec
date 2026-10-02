@@ -1,6 +1,6 @@
 # Selected client delivery
 
-Two engagements described by Evan. Both remain **Level 5: Evan's own scope statement**, after targeted artifact, archive and connected Drive searches on 2026-10-02. No attributable client source code, execution log, accepted technical handoff or result metric was found for publication. The technical references linked below are separate implementations. [Search findings and precise missing materials](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/SEARCH-AND-GAPS.md).
+Two engagements described by Evan. Both remain **Level E: Evan's own scope statement** (formerly Level 5), after artifact/archive/Drive searches and the full accessible-filesystem follow-up on 2026-10-02. No attributable client source code, execution log, accepted technical handoff or result metric was found for publication. The technical references linked below are separate implementations. [Search findings and precise missing materials](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/SEARCH-AND-GAPS.md).
 
 ## PT Geget Gigit — Indonesia
 
@@ -8,7 +8,7 @@ Two engagements described by Evan. Both remain **Level 5: Evan's own scope state
 **Client context:** marketing business
 **Responsibility and system:** designed and implemented an AI-powered CMO automation agent for marketing operations and decision workflows.
 
-The public scope establishes the type of system Evan delivered. It does not establish a particular model, autonomous tool permission, n8n topology, API adapter, reliability control or client outcome. Those details need client-safe supporting material before they can be stated technically.
+Evan's scope statement describes the type of system he says he designed and implemented. It does not establish a particular model, autonomous tool permission, n8n topology, API adapter, reliability control or client outcome. Those details need client-safe supporting material before they can be stated technically.
 
 ## EZUmrah — Malaysia
 
@@ -26,7 +26,7 @@ Specific connected applications, data contracts, retry behavior, approval contro
 | What process was replaced? | The exact prior process is not published. |
 | How do the systems automate and integrate? | High-level system purpose only; no client architecture/export supplied. |
 | How are failures, AI permissions and approvals handled? | Not established by these client notes. |
-| What was handed over? | No client-safe acceptance or handoff artifact supplied. |
+| What was handed over? | No client-origin acceptance or handoff artifact found in accessible sources. |
 | Can a reviewer inspect Evan's technical approach? | Yes, through the separate internal workflow and tested references below. |
 
 Credentials, customer data, private process maps, confidential API details and commercial terms are not included. A future client-safe note should add only facts supported by permission-safe artifacts, not borrow controls or outcomes from a reference implementation.
