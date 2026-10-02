@@ -330,4 +330,3 @@ If asked about a frontend integration defect, use [BIMMCA refresh hardening](htt
 ## Evidence boundaries to remember
 
 No confirmed expired-token recovery, historical duplicate-send outcome, achieved hourly volume, client UAT/signoff, exactly-once delivery, distributed n8n lock or autonomous approval enforcement is established. The real n8n Error-to-Success pack is a reproduced recovery. MAXY is reported scoping; PT Geget Gigit and EZUmrah are self-reported private engagement scopes. State these naturally when relevant, then focus on the code and verified result.
-
