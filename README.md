@@ -1,43 +1,32 @@
-# Evan Naraya
+# AI Automation & Integration Engineer — n8n · APIs · Reliable Workflow Systems
 
-**AI Automation & Integration Engineer**
-**n8n · APIs · Reliable Workflow Systems**
-Indonesia · Open to remote and international work
+**Evan Naraya** · Indonesia · Remote
 
-I build automation around explicit state, predictable gates and inspectable failure paths. AI assists with language; deterministic controls decide whether an external action is allowed.
+I build API-connected workflows around explicit state, validated actions and inspectable recovery paths. My strongest public proof is historical VAREVANT n8n source, a saved real-n8n recovery reproduction and a tested TypeScript/PostgreSQL integration reference.
 
-## Proof in three minutes
+## Thirty second review
 
-| Inspect | What you can verify |
-| --- | --- |
-| **[n8n workflow engineering](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n)** | Sanitized historical workflow, extracted Code nodes, claim/commit checks, bounce handling and offline tests. |
-| **[Source → execution and handler recovery](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n/runtime-evidence)** | Strong historical V6 workflow/path match, full-canvas topology, and real n8n **REPRODUCED** V19 handler Error → Success. Exact historical runtime snapshot remains unverified. |
-| **[API / PostgreSQL reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | Signed webhooks, atomic reservation, classified HTTP retries, tests and CI. |
-| [Client delivery notes](CLIENT-WORK.md) | PT Geget Gigit and EZUmrah: engagement scope with a clear privacy boundary. |
-| [Supabase / Realtime consumer](https://github.com/naraya07pedro-spec/bimmca-intelligence) | Actual browser query/render code, error/empty/stale states and offline tests. |
+| Time | Open | What it establishes |
+| --- | --- | --- |
+| 0–10 seconds | [Flagship architecture and repair cases](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/FLAGSHIP-CASE-STUDY.md) | Nontrivial orchestration, state boundaries and three traceable repairs |
+| 10–20 seconds | [Saved n8n Error to Success report](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/reproduced-recovery/recorded/report.json) | Same-input reproduced handler recovery; exact historical production recovery unverified |
+| 20–30 seconds | [Integration reliability and CI](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/docs/RELIABILITY-REVIEW.md) | Signed intake, immutable identity, PostgreSQL contention, retries and partial-failure tests |
 
-## Selected client delivery
+## Engineering ownership to inspect
 
-- **PT Geget Gigit — Indonesia:** freelance AI Automation Engineer; built an AI-powered CMO automation agent for marketing operations.
-- **EZUmrah — Malaysia:** freelance AI Automation & Integration Engineer; built an end-to-end AI automation and integration system for an Umrah travel business.
+- **n8n:** historical 117-node graph, 60 JavaScript Code nodes, live rereads, claim/commit checks, suppression, bounce handling and deterministic copy gates. Counts describe source structure.
+- **Debugging:** per-item fallback and no-send contract repairs, Cloud environment compatibility and worker identity across queue reads. [Five traceable cases and supporting tests](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n/incidents).
+- **Backend:** raw-byte HMAC, reservation before HTTP side effects, bounded classified retries, persisted states and real PostgreSQL/signed E2E checks in CI. Reference/demo implementation.
+- **Supabase:** [BIMMCA consumer](https://github.com/naraya07pedro-spec/bimmca-intelligence) and [refresh-state hardening](https://github.com/naraya07pedro-spec/bimmca-intelligence/blob/main/docs/DEBUGGING-CASE.md); backend ingestion remains outside public proof.
 
-These are **Level E engagement-scope notes**, based on my own statement. Public reference code and internal VAREVANT artifacts are separate from these private client implementations. [Read the scope and evidence available](CLIENT-WORK.md).
+## Client and implementation scope
 
-## Engineering depth to inspect
+PT Geget Gigit, Indonesia: AI-powered CMO automation for marketing operations. EZUmrah, Malaysia: end-to-end automation/integration for an Umrah travel business. These are self-reported private engagement scopes; public internal/reference work is separate. MAXY Academy is reported outbound implementation scoping, not a verified completed build. [Client scope and evidence](CLIENT-WORK.md).
 
-- **n8n:** branching, merges, waits, scheduling and live-state rereads; original JavaScript controls are tested with synthetic inputs.
-- **Integration reliability:** HMAC over raw request bytes, immutable event identity, PostgreSQL reservation before a side effect, classified retries and ambiguous-outcome handling.
-- **AI boundaries:** constrained draft outputs, deterministic fallback and manual-review routing; lexical validation is not a guarantee of factual accuracy.
-- **Handoff:** source notes, failure-mode documentation, reproducible commands and a distinction between implemented, tested and unverified behavior.
+**Core:** n8n · JavaScript · TypeScript · REST APIs · Webhooks · JSON · PostgreSQL · Supabase · workflow state · validation · deduplication · retries · testing · GitHub CI
 
-## Selected repositories
-
-[VAREVANT](https://github.com/naraya07pedro-spec/varevant.com) holds historical n8n source and delivery documentation. [Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference) is runnable backend proof. [BIMMCA Intelligence](https://github.com/naraya07pedro-spec/bimmca-intelligence) is supporting application proof. [Portfolio review map](PORTFOLIO-REVIEW.md) records their roles and gaps.
-
-**Core surface:** n8n · JavaScript · TypeScript · REST APIs · Webhooks · JSON · PostgreSQL · Supabase · Git · tests and CI
-
-## Contact
+[Interview stories](INTERVIEW-STORY-BANK.md) · [Technical cheat sheet](TECHNICAL-CHEAT-SHEET.md) · [Portfolio review](PORTFOLIO-REVIEW.md)
 
 [evan@varevant.com](mailto:evan@varevant.com) · [LinkedIn](https://www.linkedin.com/in/evannaraya) · [varevant.com](https://varevant.com)
 
-**Evidence boundary:** professional experience is under one year. Historical exports, screenshots, synthetic reference implementations and client scope are labeled separately. No production-volume, uptime, ROI or accepted external-contribution claim is implied.
+Historical captures, archived code, reproduced tests and private engagement scope are labeled separately. Experience began in 2026. No production volume, uptime, ROI, client acceptance or exactly-once delivery claim is implied.
