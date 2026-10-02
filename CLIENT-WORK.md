@@ -38,3 +38,13 @@ Credentials, customer data, private process maps, confidential API details and c
 3. [Historical n8n execution gallery](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/docs/operational-evidence) — visible states from separate internal revisions.
 
 These links demonstrate engineering work without representing it as either client's private system.
+
+## MAXY Academy and Isaac Munandar
+
+**Stage:** reported outbound implementation scoping, not verified completed delivery. **Evidence level:** E, Evan's uploaded scope/context statement.
+
+The 1 October 2026 context note describes a Singapore outbound MVP involving an existing HubSpot CRM, email and assisted LinkedIn activity. It identifies new n8n setup, prospect-source selection, suppression data, review/handoff boundaries and access dependencies as requirements. It does not establish that those integrations were built, tested or accepted. A separate social-content discussion is not part of a proved delivered scope.
+
+The connected LinkedIn tracker has an older, unverified outreach-status row. It must not override the newer context note, and neither record is client-origin acceptance. Targeted Gmail searches across three accessible accounts, Drive discovery and Library/source review did not recover an attributable payment-to-milestone, implementation-test-response chain or accepted handoff. No commercial terms, private sender account or prospect data are published here.
+
+PT Geget Gigit and EZUmrah remain Level E after the follow-up. The MESIN EMAIL video has a client-associated hostname but no matched export, signed handoff or acceptance chain; it is not assigned to either client's full system. [Flagship internal engineering case](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/FLAGSHIP-CASE-STUDY.md) stays separate.
