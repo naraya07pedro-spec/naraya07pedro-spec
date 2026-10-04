@@ -1,22 +1,25 @@
 # Portfolio review map
 
-Reviewed 2026-10-02. Source, visible run state and CI take precedence over titles, interface copy or filenames.
+Reviewed 2026-10-04 after the Python runtime merged and main CI passed. Source, visible run state and CI take precedence over titles, interface copy or filenames.
 
 | Public repository | Role | Open first | Boundary |
 | --- | --- | --- | --- |
 | [Profile](https://github.com/naraya07pedro-spec/naraya07pedro-spec) | Recruiter evidence index | [README](README.md) | Client scope remains Level E. |
+| [Agent Runtime Python](https://github.com/naraya07pedro-spec/agent-runtime-python) | Flagship Python/agent reliability proof | [Process-death test](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/tests/failure_injection/test_process_death.py) → [ownership races](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/tests/concurrency/test_ownership.py) → [main CI](https://github.com/naraya07pedro-spec/agent-runtime-python/actions/runs/37224729577) | Executable sandbox/reference; no production or live model-quality claim. |
 | [VAREVANT](https://github.com/naraya07pedro-spec/varevant.com) | Flagship n8n source + runtime evidence + delivery surface | [n8n review pack](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n) | Historical source/path associations plus labeled real n8n recovery reproduction; exact historical snapshot unverified. |
 | [Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference) | Strong backend/reliability proof | Handler → SQL reservation → tests/CI | Synthetic reference; separate historical screenshot gallery. |
 | [BIMMCA Intelligence](https://github.com/naraya07pedro-spec/bimmca-intelligence) | Supporting application proof | Browser source → tests → architecture | Consumer only; ingestion, database policies and metric provenance unverified. |
 | [3D Assets](https://github.com/naraya07pedro-spec/3d-assets) | Archived asset storage | Asset README | De-emphasized for automation roles. |
 
-The n8n pack stays in VAREVANT. The maintained backend reference remains separate from its older VAREVANT source copy. No new repository or website redesign was introduced.
+The n8n pack stays in VAREVANT. The maintained backend reference remains separate from its older VAREVANT source copy. The Python runtime is a separate bounded execution reference; it does not retroactively establish stronger guarantees for historical n8n workflows. No website redesign was introduced.
 
 ## Reviewer paths
 
-**30 seconds:** profile headline → n8n proof link → runtime package's evidence table → V6 source/path match.
+**30 seconds:** profile headline → Python runtime evidence table → TypeScript reliability review → VAREVANT source and saved recovery report.
 
-**Five minutes:** full-canvas overview → V6 matching signals/false branch → V19 historical observations, exact archived node diff, and same-input real n8n reproduction → original claim/error controls and offline tests → concurrency limits → backend SQL/CI → client evidence level.
+**Python engineering review:** [reliability semantics](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/docs/reliability-model.md) → late-worker race → subprocess recovery → [limits](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/docs/limitations.md). Main CI verified 211 passing tests, 12/12 deterministic evals, migrations, Docker bootstrap and measured admission at commit `c1f7b899273759ace6b54f34c5fdaeebe9cd4ce2`; this is an artifact result, not a career-history or production-scale claim.
+
+**Five-minute n8n review:** full-canvas overview → V6 matching signals/false branch → V19 historical observations, exact archived node diff, and same-input real n8n reproduction → original claim/error controls and offline tests → concurrency limits → backend SQL/CI → client evidence level.
 
 ## Evidence completion
 
