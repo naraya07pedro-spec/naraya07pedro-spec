@@ -15,6 +15,7 @@ I build automation and backend systems that stay understandable when real-world 
 | **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** | Python/FastAPI + PostgreSQL runtime with explicit state, tenant authorization, persistent approvals, fenced workers, bounded reconciliation, crash recovery and observability | **261 passing tests**, **90.01% coverage** in the preserved v2 evidence archive, plus real process-death, PostgreSQL interruption and concurrency tests |
 | **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript/PostgreSQL webhook integration with raw-byte HMAC, durable event identity, atomic reservation, bounded retries and persisted outcomes | Runnable code, HTTP/database tests, signed E2E checks and CI |
 | **[VAREVANT Workflow Engineering](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n)** | n8n orchestration with live re-checks, suppression, deduplication, claim/verify controls, failure classification and recovery-oriented tests | Historical **117-node** graph, **60 JavaScript Code nodes**, incident cases and saved recovery evidence |
+| **[Agentic Automation Systems Lab](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab)** | Independent n8n/AI portfolio engineering: effect authorization, bounded polling, RAG lifecycle, redacted observability, model routing and subworkflow contracts | **24 passing tests**, **3 validated n8n workflow JSONs**, six independently implemented contracts |
 
 ---
 
@@ -64,6 +65,20 @@ Historical workflow source and testable repair cases around error-path contracts
 - [Incident catalog](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n/incidents)
 - [Failure modes](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/FAILURE-MODES.md)
 - [Saved recovery evidence](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/reproduced-recovery/recorded/report.json)
+
+
+### 4) Agentic Automation Systems Lab — n8n / AI Architecture Reimplementation
+**Repository:** [Agentic Automation Systems Lab](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab)
+
+A nine-guide n8n/AI architecture study converted into independently implemented, credential-free engineering evidence rather than tutorial claims.
+
+**Current proof:**
+- six reusable JavaScript contracts for effect authorization, bounded polling, RAG lifecycle, observability, model routing and parent/child workflow boundaries;
+- **24 passing tests**;
+- **3 validated n8n workflow JSONs**;
+- explicit separation between source-derived patterns and personally implemented/tested work.
+
+**Review first:** [Lab README](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab) → [source audit](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/docs/SOURCE-AUDIT.md) → [verification record](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/docs/VERIFICATION.md)
 
 ---
 
