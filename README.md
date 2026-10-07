@@ -2,7 +2,7 @@
 
 **Python / FastAPI · n8n · TypeScript · PostgreSQL · REST APIs · AI-assisted systems**
 
-I build automation and backend systems that stay understandable when real-world failure modes show up: duplicate events, partial commits, retries, stale state, approval boundaries, external API uncertainty, and recovery.
+I build automation and backend systems around the parts that usually break once workflows become real: duplicate events, partial commits, retries, stale state, approval boundaries, external API uncertainty, long-running jobs, retrieval lifecycle, and recovery.
 
 **Based in Indonesia · Remote / international work**
 
@@ -21,10 +21,11 @@ I build automation and backend systems that stay understandable when real-world 
 
 ## What I work on
 
+- **Advanced n8n / automation:** deterministic vs agentic boundaries, effect authorization, bounded async jobs, RAG lifecycle, modular subworkflows, recovery-oriented workflow design
 - **Automation & integration:** n8n, REST APIs, webhooks, JSON, third-party services, CRM/revenue workflows
 - **Backend systems:** Python, FastAPI, Pydantic, TypeScript, JavaScript, PostgreSQL, Supabase
 - **Reliability:** idempotency, deduplication, retries, state machines, concurrency boundaries, reconciliation, failure recovery
-- **AI-assisted workflows:** structured outputs, tool/function calling, bounded agents, deterministic guardrails, human approval boundaries
+- **AI-assisted workflows:** structured outputs, tool/function calling, bounded agents, deterministic guardrails, human approval boundaries, model routing and audit-safe observability
 - **Delivery:** testing, CI, debugging, VPS operations, technical documentation and implementation handoff
 
 ---
@@ -67,15 +68,16 @@ Historical workflow source and testable repair cases around error-path contracts
 - [Saved recovery evidence](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/reproduced-recovery/recorded/report.json)
 
 
-### 4) Agentic Automation Systems Lab — n8n / AI Architecture Reimplementation
+### 4) Agentic Automation Systems Lab — Advanced n8n / AI Systems Engineering
 **Repository:** [Agentic Automation Systems Lab](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab)
 
-A nine-guide n8n/AI architecture study converted into independently implemented, credential-free engineering evidence rather than tutorial claims.
+Advanced n8n/AI architecture work converted into independently implemented, credential-free engineering evidence. The lab focuses on recurring system concerns I repeatedly handle across automation work: external-effect boundaries, async jobs, retrieval lifecycle, observability, model selection and explicit subworkflow contracts.
 
 **Current proof:**
 - six reusable JavaScript contracts for effect authorization, bounded polling, RAG lifecycle, observability, model routing and parent/child workflow boundaries;
 - **24 passing tests**;
 - **3 validated n8n workflow JSONs**;
+- hardened rules for deadline-bounded polling, lifecycle-aware retrieval, deterministic write authorization, structured workflow boundaries and secret-safe audit events;
 - explicit separation between source-derived patterns and personally implemented/tested work.
 
 **Review first:** [Lab README](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab) → [source audit](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/docs/SOURCE-AUDIT.md) → [verification record](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/docs/VERIFICATION.md)
