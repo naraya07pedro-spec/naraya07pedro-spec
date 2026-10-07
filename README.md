@@ -1,6 +1,6 @@
 # Evan Naraya — Automation, Integration & Backend Engineering
 
-**Python / FastAPI · n8n · TypeScript · PostgreSQL · REST APIs · AI-assisted systems**
+**Python / FastAPI · n8n · TypeScript · PostgreSQL/pgvector · REST APIs · MCP · AI-assisted systems**
 
 I build automation and backend systems around the parts that usually break once workflows become real: duplicate events, partial commits, retries, stale state, approval boundaries, external API uncertainty, long-running jobs, retrieval lifecycle, and recovery.
 
@@ -13,9 +13,9 @@ I build automation and backend systems around the parts that usually break once 
 | Project | What I built | Evidence to inspect |
 |---|---|---|
 | **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** | Python/FastAPI + PostgreSQL runtime with explicit state, tenant authorization, persistent approvals, fenced workers, bounded reconciliation, crash recovery and observability | **261 passing tests**, **90.01% coverage** in the preserved v2 evidence archive, plus real process-death, PostgreSQL interruption and concurrency tests |
+| **[Knowledge Workflow Runtime](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab/knowledge-runtime)** | Python/FastAPI retrieval with atomic source versions and citations; native MCP tools with server-bound authority; PDF/image/DOCX extraction with OCR and durable handoffs | **132 passing tests**, **91.58% statement/branch coverage**, real PostgreSQL/pgvector, SDK protocol tests and non-root Docker/TCP/OCR verification |
 | **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript/PostgreSQL webhook integration with raw-byte HMAC, durable event identity, atomic reservation, bounded retries and persisted outcomes | Runnable code, HTTP/database tests, signed E2E checks and CI |
 | **[VAREVANT Workflow Engineering](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n)** | n8n orchestration with live re-checks, suppression, deduplication, claim/verify controls, failure classification and recovery-oriented tests | Historical **117-node** graph, **60 JavaScript Code nodes**, incident cases and saved recovery evidence |
-| **[Agentic Automation Systems Lab](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab)** | Independent n8n/AI portfolio engineering: effect authorization, bounded polling, RAG lifecycle, redacted observability, model routing and subworkflow contracts | **24 passing tests**, **3 validated n8n workflow JSONs**, six independently implemented contracts |
 
 ---
 
@@ -25,7 +25,8 @@ I build automation and backend systems around the parts that usually break once 
 - **Automation & integration:** n8n, REST APIs, webhooks, JSON, third-party services, CRM/revenue workflows
 - **Backend systems:** Python, FastAPI, Pydantic, TypeScript, JavaScript, PostgreSQL, Supabase
 - **Reliability:** idempotency, deduplication, retries, state machines, concurrency boundaries, reconciliation, failure recovery
-- **AI-assisted workflows:** structured outputs, tool/function calling, bounded agents, deterministic guardrails, human approval boundaries, model routing and audit-safe observability
+- **Knowledge and document workflows:** pgvector retrieval, version/deletion lifecycle, SQL metadata filters, source citations, PDF/image/DOCX parsing and OCR review states
+- **AI-assisted workflows:** native MCP, structured outputs, tool/function calling, bounded agents, deterministic guardrails, human approval boundaries, model routing and audit-safe observability
 - **Delivery:** testing, CI, debugging, VPS operations, technical documentation and implementation handoff
 
 ---
@@ -45,7 +46,18 @@ The runtime persists dispatch intent before external I/O, fences stale workers, 
 - [Tenant isolation tests](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/tests/security/test_tenants.py)
 - [Database interruption / restore drill](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/scripts/recovery_drill.py)
 
-### 2) TypeScript / PostgreSQL — Production Integration Reference
+### 2) Python / AI Application — Knowledge Workflow Runtime
+**Repository:** [knowledge-runtime](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab/knowledge-runtime)
+
+Built one service for attributable knowledge, bounded tool authority and validated document data. PostgreSQL/pgvector handles atomic document replacement, deletion tombstones, tenant/metadata filters, reranking and current source spans. A native MCP stdio gateway exposes credential-bound tools and target-bound proposals with separate human approval. PDF, PNG/JPEG and DOCX extraction uses killable parser processes, local Tesseract/Poppler, strict invoice fields, review states and leased jobs with atomic local handoffs.
+
+**Current proof:** 132 tests; 91.58% combined statement/branch coverage; real PostgreSQL/pgvector, SDK MCP subprocesses, concurrency/failure cases and Docker/TCP/OCR demos. The default retrieval is lexical/extractive; the reference uses synthetic data and does not deliver outbound messages.
+
+**Review first:** [runtime and demo](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab/knowledge-runtime) → [retrieval tests](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/knowledge-runtime/tests/test_retrieval.py) → [native MCP tests](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/knowledge-runtime/tests/test_mcp_wire.py) → [document tests](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/knowledge-runtime/tests/test_documents.py) → [CI](https://github.com/naraya07pedro-spec/varevant.com/actions/workflows/knowledge-runtime.yml).
+
+The [orchestration foundation](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab) retains six JavaScript contracts, 24 Node tests and three structurally validated n8n workflow skeletons. These are separate from the Python runtime test total.
+
+### 3) TypeScript / PostgreSQL — Production Integration Reference
 **Repository:** [production-integration-reference](https://github.com/naraya07pedro-spec/production-integration-reference)
 
 A runnable integration reference covering signed webhook intake, immutable event identity, PostgreSQL reservation before side effects, classified retries, partial-failure handling and persisted outcomes.
@@ -56,7 +68,7 @@ A runnable integration reference covering signed webhook intake, immutable event
 - [Database reservation](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/src/idempotency.ts)
 - [Tests](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/tests)
 
-### 3) n8n — Workflow Engineering & Failure Recovery
+### 4) n8n — Workflow Engineering & Failure Recovery
 **Repository:** [varevant.com / n8n](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n)
 
 Historical workflow source and testable repair cases around error-path contracts, worker identity, no-send behavior, state preservation, uncertain external actions and runtime compatibility.
@@ -67,20 +79,6 @@ Historical workflow source and testable repair cases around error-path contracts
 - [Failure modes](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/FAILURE-MODES.md)
 - [Saved recovery evidence](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/reproduced-recovery/recorded/report.json)
 
-
-### 4) Agentic Automation Systems Lab — Advanced n8n / AI Systems Engineering
-**Repository:** [Agentic Automation Systems Lab](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab)
-
-Advanced n8n/AI architecture work converted into independently implemented, credential-free engineering evidence. The lab focuses on recurring system concerns I repeatedly handle across automation work: external-effect boundaries, async jobs, retrieval lifecycle, observability, model selection and explicit subworkflow contracts.
-
-**Current proof:**
-- six reusable JavaScript contracts for effect authorization, bounded polling, RAG lifecycle, observability, model routing and parent/child workflow boundaries;
-- **24 passing tests**;
-- **3 validated n8n workflow JSONs**;
-- hardened rules for deadline-bounded polling, lifecycle-aware retrieval, deterministic write authorization, structured workflow boundaries and secret-safe audit events;
-- explicit separation between source-derived patterns and personally implemented/tested work.
-
-**Review first:** [Lab README](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab) → [source audit](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/docs/SOURCE-AUDIT.md) → [verification record](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/docs/VERIFICATION.md)
 
 ---
 
@@ -122,6 +120,6 @@ I prefer a small number of explicit rules over hidden automation magic:
 - **Website:** https://varevant.com
 - **GitHub:** https://github.com/naraya07pedro-spec
 
-**Open to remote Automation, Integration, Implementation and Python/API engineering work.**
+**Open to remote Automation, Integration, AI Application, Implementation and Python/API engineering work.**
 
 <sub>Public claims are scoped to what the linked source, tests and CI establish. Experience began in 2026; no production scale, uptime or client ROI is implied by reference repositories.</sub>
