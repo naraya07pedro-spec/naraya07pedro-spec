@@ -1,125 +1,37 @@
-# Evan Naraya — Automation, Integration & Backend Engineering
+# Evan Naraya
 
-**Python / FastAPI · n8n · TypeScript · PostgreSQL/pgvector · REST APIs · MCP · AI-assisted systems**
+**Software Engineer · Backend & Integration · Python/FastAPI · TypeScript · PostgreSQL**
 
-I build automation and backend systems around the parts that usually break once workflows become real: duplicate events, partial commits, retries, stale state, approval boundaries, external API uncertainty, long-running jobs, retrieval lifecycle, and recovery.
+I build backend and full-stack systems with explicit authorization, durable state, and recoverable failure paths. My public projects are engineering references with reproducible tests—not claims of customer scale or production traffic.
 
-**Based in Indonesia · Remote / international work**
+**Indonesia (UTC+7) · Open to remote software engineering and integration roles that hire from Indonesia**
 
----
+[Portfolio](https://evannaraya.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/evannaraya/) · [Email](mailto:evannarayahp@gmail.com)
 
-## Start here — 60 second technical review
+## Start here — three projects to inspect
 
-| Project | What I built | Evidence to inspect |
-|---|---|---|
-| **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** | Python/FastAPI + PostgreSQL runtime with explicit state, tenant authorization, persistent approvals, fenced workers, bounded reconciliation, crash recovery and observability | **261 passing tests**, **90.01% coverage** in the preserved v2 evidence archive, plus real process-death, PostgreSQL interruption and concurrency tests |
-| **[Knowledge Workflow Runtime](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab/knowledge-runtime)** | Python/FastAPI retrieval with atomic source versions and citations; native MCP tools with server-bound authority; PDF/image/DOCX extraction with OCR and durable handoffs | **134 passing tests**, **91.64% statement/branch coverage**, real PostgreSQL/pgvector, SDK protocol tests and non-root Docker/TCP/OCR verification |
-| **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript/PostgreSQL webhook integration with raw-byte HMAC, durable event identity, atomic reservation, bounded retries and persisted outcomes | Runnable code, HTTP/database tests, signed E2E checks and CI |
-| **[VAREVANT Workflow Engineering](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n)** | n8n orchestration with live re-checks, suppression, deduplication, claim/verify controls, failure classification and recovery-oriented tests | Historical **117-node** graph, **60 JavaScript Code nodes**, incident cases and saved recovery evidence |
+| Project | Engineering work | Fastest evidence |
+| --- | --- | --- |
+| **[Full-Stack AI Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console)** · [portfolio demo](https://evannaraya.netlify.app/#operations-console) | Next.js/React frontend; Fastify API; PostgreSQL/Prisma; separate worker; sessions, versioned workflows, approvals, leases, retries and recovery | [Architecture](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/blob/main/docs/ARCHITECTURE.md) · [evidence](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/blob/main/docs/EVIDENCE.md) · [CI run](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/runs/38337575725) |
+| **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** | Python/FastAPI/PostgreSQL runtime with tenant authorization, persistent approvals, lease-fenced workers and bounded reconciliation after uncertain external effects | [Architecture](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/docs/architecture.md) · [failure-injection tests](https://github.com/naraya07pedro-spec/agent-runtime-python/tree/main/tests/failure_injection) · [v2 evidence](https://github.com/naraya07pedro-spec/agent-runtime-python/tree/main/evidence/v2) |
+| **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript/PostgreSQL signed webhook intake, durable identity before side effects, controlled retries and persisted outcomes | [Reliability review](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/docs/RELIABILITY-REVIEW.md) · [tests](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/tests) · [CI](https://github.com/naraya07pedro-spec/production-integration-reference/actions/workflows/ci.yml) |
 
----
+**Verification:** Console final reviewed commit `654ce3b`: 58/58 system checks, 10 native and 10 Docker browser cases, 10 Docker smoke checks. Bounded Agent Runtime preserved v2 archive: 261 tests, 90.01% coverage. Counts belong to their documented revisions, not automatically to every future change.
 
-## What I work on
+![Authentic Full-Stack AI Operations Console screenshot](https://raw.githubusercontent.com/naraya07pedro-spec/evan-naraya-portfolio/main/assets/projects/operations-console/dashboard.png)
 
-- **Advanced n8n / automation:** deterministic vs agentic boundaries, effect authorization, bounded async jobs, RAG lifecycle, modular subworkflows, recovery-oriented workflow design
-- **Automation & integration:** n8n, REST APIs, webhooks, JSON, third-party services, CRM/revenue workflows
-- **Backend systems:** Python, FastAPI, Pydantic, TypeScript, JavaScript, PostgreSQL, Supabase
-- **Reliability:** idempotency, deduplication, retries, state machines, concurrency boundaries, reconciliation, failure recovery
-- **Knowledge and document workflows:** pgvector retrieval, version/deletion lifecycle, SQL metadata filters, source citations, PDF/image/DOCX parsing and OCR review states
-- **AI-assisted workflows:** native MCP, structured outputs, tool/function calling, bounded agents, deterministic guardrails, human approval boundaries, model routing and audit-safe observability
-- **Delivery:** testing, CI, debugging, VPS operations, technical documentation and implementation handoff
+*Console uses synthetic data and a deterministic HTTP sandbox. It does **not** run a production LLM; the application has not been separately deployed as a live backend service. The linked portfolio page is live.*
 
----
+## Other engineering work
 
-## Flagship engineering proof
+- [Knowledge Workflow Runtime](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab/knowledge-runtime) — FastAPI, PostgreSQL/pgvector, citations, MCP and OCR. The verified 7 October 2026 revision recorded 134 tests; default retrieval is lexical/extractive.
+- [VAREVANT Workflow Engineering](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n) — n8n/JavaScript controls for routing, suppression, duplicate prevention, execution ownership and recovery; historical sanitized 117-node export.
+- **Client engagements (private):** EZUmrah (Malaysia), six connected travel-operations workflows; PT Geget Gigit (Indonesia), AI-assisted marketing workflow integration. Public reference repositories are separate from these engagements. [Scope notes](CLIENT-WORK.md).
 
-### 1) Python / FastAPI — Bounded Agent Runtime
-**Repository:** [agent-runtime-python](https://github.com/naraya07pedro-spec/agent-runtime-python)
+## How I approach backend work
 
-Built to answer one hard question: **what should happen when an external action may have succeeded but the worker dies before the result is committed?**
+Validate inputs and authority before external effects. Persist identity before dispatch. Distinguish retryable failure from ambiguous results. Test concurrent requests, process termination, cross-tenant access and recovery. Record the limitations alongside the passing tests.
 
-The runtime persists dispatch intent before external I/O, fences stale workers, stores approvals, tracks ambiguous outcomes separately, and uses bounded read-only reconciliation instead of blind write retries.
+**Stack:** Python · FastAPI · TypeScript · Fastify · Node.js · PostgreSQL · Prisma · SQLAlchemy · React/Next.js · Docker · GitHub Actions · pytest · Vitest · Playwright · REST APIs · webhooks · n8n
 
-**Review these first:**
-- [Architecture](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/docs/architecture.md)
-- [Process-death tests](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/tests/failure_injection/test_process_death.py)
-- [Tenant isolation tests](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/tests/security/test_tenants.py)
-- [Database interruption / restore drill](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/scripts/recovery_drill.py)
-
-### 2) Python / AI Application — Knowledge Workflow Runtime
-**Repository:** [knowledge-runtime](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab/knowledge-runtime)
-
-Built one service for attributable knowledge, bounded tool authority and validated document data. PostgreSQL/pgvector handles atomic document replacement, deletion tombstones, tenant/metadata filters, reranking and current source spans. A native MCP stdio gateway exposes credential-bound tools and target-bound proposals with separate human approval. PDF, PNG/JPEG and DOCX extraction uses killable parser processes, local Tesseract/Poppler, strict invoice fields, review states and leased jobs with atomic local handoffs. Parser/OCR workers omit service and cloud credentials; parent-owned temporary files are removed after timeout or cancellation.
-
-**Current proof:** 134 tests; 91.64% combined statement/branch coverage; real PostgreSQL/pgvector, SDK MCP subprocesses, concurrency/failure cases and Docker/TCP/OCR demos. The default retrieval is lexical/extractive; the reference uses synthetic data and does not deliver outbound messages.
-
-**Review first:** [runtime and demo](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab/knowledge-runtime) → [retrieval tests](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/knowledge-runtime/tests/test_retrieval.py) → [native MCP tests](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/knowledge-runtime/tests/test_mcp_wire.py) → [document tests](https://github.com/naraya07pedro-spec/varevant.com/blob/main/examples/agentic-systems-lab/knowledge-runtime/tests/test_documents.py) → [CI](https://github.com/naraya07pedro-spec/varevant.com/actions/workflows/knowledge-runtime.yml).
-
-The [orchestration foundation](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab) retains six JavaScript contracts, 24 Node tests and three structurally validated n8n workflow skeletons. These are separate from the Python runtime test total.
-
-### 3) TypeScript / PostgreSQL — Production Integration Reference
-**Repository:** [production-integration-reference](https://github.com/naraya07pedro-spec/production-integration-reference)
-
-A runnable integration reference covering signed webhook intake, immutable event identity, PostgreSQL reservation before side effects, classified retries, partial-failure handling and persisted outcomes.
-
-**Review these first:**
-- [Reliability review](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/docs/RELIABILITY-REVIEW.md)
-- [Handler](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/src/handler.ts)
-- [Database reservation](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/src/idempotency.ts)
-- [Tests](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/tests)
-
-### 4) n8n — Workflow Engineering & Failure Recovery
-**Repository:** [varevant.com / n8n](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n)
-
-Historical workflow source and testable repair cases around error-path contracts, worker identity, no-send behavior, state preservation, uncertain external actions and runtime compatibility.
-
-**Review these first:**
-- [Flagship case study](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/FLAGSHIP-CASE-STUDY.md)
-- [Incident catalog](https://github.com/naraya07pedro-spec/varevant.com/tree/main/n8n/incidents)
-- [Failure modes](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/FAILURE-MODES.md)
-- [Saved recovery evidence](https://github.com/naraya07pedro-spec/varevant.com/blob/main/n8n/runtime-evidence/reproduced-recovery/recorded/report.json)
-
-
----
-
-## Selected client work
-
-**PT Geget Gigit — Indonesia**  
-AI-powered CMO automation for recurring marketing operations.
-
-**EZUmrah — Malaysia**  
-End-to-end automation and integration system spanning six core workflows plus shared orchestration.
-
-Client implementations are private. Public repositories above are separate engineering references and internal/historical evidence; they do not substitute for client acceptance or business-result claims. [Client scope notes](CLIENT-WORK.md).
-
----
-
-## Supporting project
-
-**[BIMMCA Intelligence](https://github.com/naraya07pedro-spec/bimmca-intelligence)** — Supabase-backed browser consumer for sampled AI recommendation metrics, with defensive refresh behavior and offline tests. Public proof covers the consumer layer; ingestion and backend provenance are outside the repository.
-
----
-
-## How I think about engineering
-
-I prefer a small number of explicit rules over hidden automation magic:
-
-1. **Validate before acting.**
-2. **Persist identity before side effects.**
-3. **Separate retryable failure from ambiguous outcome.**
-4. **Keep AI judgment bounded by deterministic controls.**
-5. **Make failures inspectable and recoverable.**
-6. **Test the failure path, not only the happy path.**
-
----
-
-## Contact
-
-- **Email:** [evan@varevant.com](mailto:evan@varevant.com)
-- **LinkedIn:** https://www.linkedin.com/in/evannaraya
-- **Website:** https://varevant.com
-- **GitHub:** https://github.com/naraya07pedro-spec
-
-**Open to remote Automation, Integration, AI Application, Implementation and Python/API engineering work.**
-
-<sub>Public claims are scoped to what the linked source, tests and CI establish. Experience began in 2026; no production scale, uptime or client ROI is implied by reference repositories.</sub>
+Experience since 2026. No invented tenure, production usage, uptime or business ROI.
