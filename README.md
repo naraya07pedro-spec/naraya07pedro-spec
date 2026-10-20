@@ -18,7 +18,7 @@ I build backend and full-stack systems with explicit authorization, durable stat
 
 ## Live CI status — [fullstack-ai-operations-console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/workflows/verify.yml)
 
-[![Verify and package evidence — fullstack-ai-operations-console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/workflows/verify.yml/badge.svg)](https://github.com/naraya07pedro-spec/fullstack-ai-actions-console/actions/workflows/verify.yml)
+[![Verify and package evidence — fullstack-ai-operations-console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/workflows/verify.yml/badge.svg)](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/workflows/verify.yml)
 
 ## Live CI status — [agent-runtime-python](https://github.com/naraya07pedro-spec/agent-runtime-python/actions/workflows/verify.yml)
 
