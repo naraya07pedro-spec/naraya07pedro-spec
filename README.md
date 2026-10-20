@@ -12,9 +12,21 @@ I build backend and full-stack systems with explicit authorization, durable stat
 
 | Project | Engineering work | Fastest evidence |
 | --- | --- | --- |
-| **[Full-Stack AI Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console)** · [portfolio demo](https://evannaraya.netlify.app/#operations-console) | Next.js/React frontend; Fastify API; PostgreSQL/Prisma; separate worker; sessions, versioned workflows, approvals, leases, retries and recovery | [Architecture](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/blob/main/docs/ARCHITECTURE.md) · [evidence](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/blob/main/docs/EVIDENCE.md) · [CI run](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/runs/38337575725) |
+| **[Full-Stack AI Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console)** · [portfolio demo](https://evannaraya.netlify.app/#operations-console) | Next.js/React frontend; Fastify API; PostgreSQL/Prisma; separate worker; sessions, versioned workflows, approvals, leases, retries and recovery | [Architecture](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/blob/main/docs/ARCHITECTURE.md) · [evidence](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/blob/main/docs/EVIDENCE.md) · [CI runs](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/workflows/verify.yml) |
 | **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** | Python/FastAPI/PostgreSQL runtime with tenant authorization, persistent approvals, lease-fenced workers and bounded reconciliation after uncertain external effects | [Architecture](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/docs/architecture.md) · [failure-injection tests](https://github.com/naraya07pedro-spec/agent-runtime-python/tree/main/tests/failure_injection) · [v2 evidence](https://github.com/naraya07pedro-spec/agent-runtime-python/tree/main/evidence/v2) |
 | **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript/PostgreSQL signed webhook intake, durable identity before side effects, controlled retries and persisted outcomes | [Reliability review](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/docs/RELIABILITY-REVIEW.md) · [tests](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/tests) · [CI](https://github.com/naraya07pedro-spec/production-integration-reference/actions/workflows/ci.yml) |
+
+## Live CI status — [fullstack-ai-operations-console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/workflows/verify.yml)
+
+[![Verify and package evidence — fullstack-ai-operations-console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/workflows/verify.yml/badge.svg)](https://github.com/naraya07pedro-spec/fullstack-ai-actions-console/actions/workflows/verify.yml)
+
+## Live CI status — [agent-runtime-python](https://github.com/naraya07pedro-spec/agent-runtime-python/actions/workflows/verify.yml)
+
+[![verify — agent-runtime-python](https://github.com/naraya07pedro-spec/agent-runtime-python/actions/workflows/verify.yml/badge.svg)](https://github.com/naraya07pedro-spec/agent-runtime-python/actions/workflows/verify.yml)
+
+## Live CI status — [production-integration-reference](https://github.com/naraya07pedro-spec/production-integration-reference/actions/workflows/ci.yml)
+
+[![CI — production-integration-reference](https://github.com/naraya07pedro-spec/production-integration-reference/actions/workflows/ci.yml/badge.svg)](https://github.com/naraya07pedro-spec/production-integration-reference/actions/workflows/ci.yml)
 
 **Verification:** Console final reviewed commit `654ce3b`: 58/58 system checks, 10 native and 10 Docker browser cases, 10 Docker smoke checks. Bounded Agent Runtime preserved v2 archive: 261 tests, 90.01% coverage. Counts belong to their documented revisions, not automatically to every future change.
 
