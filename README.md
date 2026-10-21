@@ -8,13 +8,18 @@ I build backend and full-stack systems with explicit authorization, durable stat
 
 [Portfolio](https://evannaraya.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/evannaraya/) · [Email](mailto:evannarayahp@gmail.com)
 
-## Start here — three projects to inspect
+## Start here — four projects to inspect
 
 | Project | Engineering work | Fastest evidence |
 | --- | --- | --- |
+| **[Evan Naraya Portfolio](https://github.com/naraya07pedro-spec/evan-naraya-portfolio)** | Portfolio showcase, release readiness verification, SHA256 integrity audits, and automated native test suites | [Verification proof](https://github.com/naraya07pedro-spec/evan-naraya-portfolio#%EF%B8%8F-reliability-engineering--automated-verification) · [tests](https://github.com/naraya07pedro-spec/evan-naraya-portfolio/tree/main/tests) · [CI](https://github.com/naraya07pedro-spec/evan-naraya-portfolio/actions/workflows/ci.yml) |
 | **[Full-Stack AI Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console)** · [portfolio demo](https://evannaraya.netlify.app/#operations-console) | Next.js/React frontend; Fastify API; PostgreSQL/Prisma; separate worker; sessions, versioned workflows, approvals, leases, retries and recovery | [Architecture](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/blob/main/docs/ARCHITECTURE.md) · [evidence](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/blob/main/docs/EVIDENCE.md) · [CI runs](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/workflows/verify.yml) |
 | **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** | Python/FastAPI/PostgreSQL runtime with tenant authorization, persistent approvals, lease-fenced workers and bounded reconciliation after uncertain external effects | [Architecture](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/main/docs/architecture.md) · [failure-injection tests](https://github.com/naraya07pedro-spec/agent-runtime-python/tree/main/tests/failure_injection) · [v2 evidence](https://github.com/naraya07pedro-spec/agent-runtime-python/tree/main/evidence/v2) |
 | **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript/PostgreSQL signed webhook intake, durable identity before side effects, controlled retries and persisted outcomes | [Reliability review](https://github.com/naraya07pedro-spec/production-integration-reference/blob/main/docs/RELIABILITY-REVIEW.md) · [tests](https://github.com/naraya07pedro-spec/production-integration-reference/tree/main/tests) · [CI](https://github.com/naraya07pedro-spec/production-integration-reference/actions/workflows/ci.yml) |
+
+## Live CI status — [evan-naraya-portfolio](https://github.com/naraya07pedro-spec/evan-naraya-portfolio/actions/workflows/ci.yml)
+
+[![CI — evan-naraya-portfolio](https://github.com/naraya07pedro-spec/evan-naraya-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/naraya07pedro-spec/evan-naraya-portfolio/actions/workflows/ci.yml)
 
 ## Live CI status — [fullstack-ai-operations-console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/workflows/verify.yml)
 
@@ -28,7 +33,7 @@ I build backend and full-stack systems with explicit authorization, durable stat
 
 [![CI — production-integration-reference](https://github.com/naraya07pedro-spec/production-integration-reference/actions/workflows/ci.yml/badge.svg)](https://github.com/naraya07pedro-spec/production-integration-reference/actions/workflows/ci.yml)
 
-**Verification:** Console final reviewed commit `654ce3b`: 58/58 system checks, 10 native and 10 Docker browser cases, 10 Docker smoke checks. Bounded Agent Runtime preserved v2 archive: 261 tests, 90.01% coverage. Counts belong to their documented revisions, not automatically to every future change.
+**Verification:** Portfolio 10/10 native tests passed. Console final reviewed commit `654ce3b`: 58/58 system checks, 10 native and 10 Docker browser cases, 10 Docker smoke checks. Bounded Agent Runtime preserved v2 archive: 261 tests, 90.01% coverage. Counts belong to their documented revisions, not automatically to every future change.
 
 ![Authentic Full-Stack AI Operations Console screenshot](https://raw.githubusercontent.com/naraya07pedro-spec/evan-naraya-portfolio/main/assets/projects/operations-console/dashboard.png)
 
