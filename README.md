@@ -3,7 +3,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Live_Portfolio-evannaraya.netlify.app-000000?style=for-the-badge&logo=netlify&logoColor=white)](https://evannaraya.netlify.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-in/evannaraya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/evannaraya)
-[![Email](https://img.shields.io/badge/Email-naraya07pedro@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:naraya07pedro@gmail.com)
+[![Email](https://img.shields.io/badge/Email-evannarayahp@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:evannarayahp@gmail@gmail.com)
 
 ---
 
