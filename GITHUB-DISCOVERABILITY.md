@@ -1,33 +1,33 @@
-# GitHub discoverability: audited settings and exact manual steps
+# GitHub metadata and discovery: verified gaps and owner actions
 
-Audited 2026-10-05 after runtime v2 merged at `cb3fbe68aaa6ba9d1f1757069d85098d3064d794`; [post-merge CI](https://github.com/naraya07pedro-spec/agent-runtime-python/actions/runs/37262739926) is green. Runtime description/topics were read again; topics remain empty. The connected GitHub tools do not expose repository-metadata or profile-pinning writes, so these settings have **not been changed**. Current public pin order could not be verified; the earlier audit's repository-card observation is not treated as today's pin state.
+**Fresh metadata read: 13 November 2026.** GitHub's repository API was used to inspect descriptions, topics and homepage fields. The **pinned items and their order were not inspected**. The connected GitHub integration here can read metadata but does not expose a safe repository metadata or profile-pin write operation. Recommendations below have **not been applied** to the About UI.
 
-README first-screen links lead to the Python runtime, TypeScript integration reference and VAREVANT source/recovery pack. Keep the evidence-led profile headline.
+## Prioritized corrections
 
-## Repository About settings
-
-Open each repository → **About gear** → edit Description and Topics → **Save changes**. Enter each topic as a separate tag. The [official topic instructions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics) describe that control.
-
-| Repository | Description to paste | Topics to use |
+| Repository | Actual observed discrepancy | Recommended owner edit |
 | --- | --- | --- |
-| [agent-runtime-python](https://github.com/naraya07pedro-spec/agent-runtime-python) | Keep the current description: Production-style Python runtime for bounded AI agents: tool execution, state, retries, guardrails, observability, and failure recovery. | Add `python`, `fastapi`, `postgresql`, `ai-agents`, `agent-runtime`, `distributed-systems`, `idempotency`, `concurrency`, `reliability`, `observability`, `human-in-the-loop`; topics are currently empty. |
-| [varevant.com](https://github.com/naraya07pedro-spec/varevant.com) | n8n workflow engineering, API integrations, tested control logic, failure handling, and bounded AI automation. | `n8n`, `workflow-automation`, `api-integration`, `webhooks`, `automation`, `ai-agents`, `postgresql`, `supabase`, `reliability-engineering`, `javascript` |
-| [production-integration-reference](https://github.com/naraya07pedro-spec/production-integration-reference) | Runnable TypeScript/PostgreSQL reference for signed webhooks, idempotency, retries, and safe external side effects. | `typescript`, `postgresql`, `webhooks`, `idempotency`, `api-integration`, `retries`, `integration-testing`, `backend` |
-| [bimmca-intelligence](https://github.com/naraya07pedro-spec/bimmca-intelligence) | Supabase-backed AI monitoring and decision-support dashboard with documented automation architecture. | Existing `ai-monitoring`, `api-integration`, `automation`, `dashboard`, `javascript`, `postgresql`, `supabase` already fit; no change needed. |
-| [naraya07pedro-spec](https://github.com/naraya07pedro-spec/naraya07pedro-spec) | Evan Naraya — AI Automation & Systems Engineering: Python, TypeScript, APIs, and reliable workflow systems. | Optional `python`, `typescript`, `automation`, `api-integration`, `portfolio` |
+| [RepoPilot AI](https://github.com/naraya07pedro-spec/repopilot-ai) | About description claims it turns issues into tested PRs with **secure execution**, although isolated general-purpose execution and autonomous publication are not release-verified. | Description: `Experimental review-first GitHub coding workflow with bounded fixture checks, approval gates, and human-controlled PR publication.` Do not label it a production autonomous agent. |
+| [Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console) | Has `fastapi` topic, but implemented API is **Fastify**; README and code are Next.js, TypeScript, Prisma/PostgreSQL. | Remove `fastapi` topic. Prefer `fastify`, `nextjs`, `postgresql`, `prisma`, `typescript`, `api-integration` if supported by GitHub topics. |
+| [Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference) | About topics include `fastapi` and `python` although its advertised runtime/contract is TypeScript and Node.js. | Remove `fastapi`; evaluate whether `python` accurately represents any substantive shipped code before removing it. Suggested description: `TypeScript/PostgreSQL integration reference with signed webhooks, atomic deduplication, bounded retries and reconciliation tests.` |
+| [Portfolio repo](https://github.com/naraya07pedro-spec/evan-naraya-portfolio) | Description says `Live at evannaraya.netlify.app`, while README identifies `evannaraya.com` as canonical. | Verify the actual DNS/host before changing About description/homepage. Do **not** infer production-readiness from source canonical tags. |
+| [VARYN](https://github.com/naraya07pedro-spec/VARYN) | Description starts with typo `ALocal-first`. | Replace with `Experimental local-first Windows AI workspace with owner-approved LLM routing and durable tasks; source/release scope documented per tag.` No claim of a signed release. |
+| [Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python) | Topics were populated at latest read with Python, FastAPI, PostgreSQL, idempotency, concurrency, reliability and others. An October note saying topics were empty is **obsolete**. | Keep verified matching topics; no cosmetic edit needed. |
 
-The VAREVANT and TypeScript descriptions are optional refinements; their existing descriptions and topics are already relevant. The runtime description is already appropriate and needs only topics. Profile description/topics are currently empty. VAREVANT's homepage is already `https://varevant.com`; keep it. The backend and BIMMCA homepage fields are empty; no unverified live-demo URL is proposed.
+**Why this matters:** wrong framework tags reduce search accuracy; an overly broad description increases the gap between reviewer expectations and what the code/CI has actually established.
 
-## Pins
+## Profile pin recommendation (not an observed pin state)
 
-1. Open [Evan's profile](https://github.com/naraya07pedro-spec).
-2. Click **Customize your pins** in the Popular repositories/Pinned area.
-3. Select `agent-runtime-python`, `production-integration-reference`, `varevant.com`, and `bimmca-intelligence`; optionally include `naraya07pedro-spec`.
-4. Click **Save pins**.
-5. Drag the pins by their upper-right handles into that order, then visually check the first row.
+1. [Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)
+2. [Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)
+3. [Full-Stack AI Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console)
+4. [RepoPilot AI](https://github.com/naraya07pedro-spec/repopilot-ai), explicitly marked release candidate
+5. [VAREVANT engineering pack](https://github.com/naraya07pedro-spec/varevant.com)
+6. [Portfolio source](https://github.com/naraya07pedro-spec/evan-naraya-portfolio), after release/asset review
 
-The [official pin instructions](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile) describe selection and dragging. Keep archived assets out of the automation review's first row.
+These are recommendations, not proof of current pin placement. Avoid treating a preview-only repo or archived assets as a separate flagship.
 
-## Verify afterward
+## Manual UI boundary
 
-Refresh the public repository pages and profile. Check the About text/topics, homepage and pin order. These are manual settings pending Evan's action; published README/navigation improvements are separate from them.
+Visit a repository, open its **About** editor, correct Description/Topics and save. On the GitHub profile, use **Customize your pins** and check final public order. Do not auto-apply settings to unrelated/private repos, change repository visibility, or promise a profile-pin state without reading the UI.
+
+For working, exact-revision engineering evidence rather than metadata, use [ENGINEERING-EVIDENCE.md](ENGINEERING-EVIDENCE.md). Every claim about CI status in that file is dated and tied to a source commit.
