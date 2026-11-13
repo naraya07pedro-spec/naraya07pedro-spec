@@ -1,6 +1,6 @@
 # Evan Naraya
 
-**Backend & AI Systems Engineer** · APIs · Integrations · Agent Orchestration
+**Backend & Integration Engineer** · Python · TypeScript · Applied AI Systems
 
 Based in Magelang, Indonesia (UTC+7). Open to international remote engineering roles and contracts.
 
@@ -10,24 +10,26 @@ I build Python and TypeScript systems where an API call is only one part of the 
 
 ## Selected engineering work
 
-| Project | Implementation and evidence |
-| --- | --- |
-| **[RepoPilot AI](https://github.com/naraya07pedro-spec/repopilot-ai)** | Local-first coding proposal workflow with provider adapters, persistent review state, approval-bound changes and a recorded real CPU-model inference. [Release candidate PR #10](https://github.com/naraya07pedro-spec/repopilot-ai/pull/10). Local workspace and patch export are being validated; arbitrary code execution and autonomous publication remain disabled. |
-| **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** | Python / FastAPI / PostgreSQL. Persisted dispatch intent, tenant boundaries, lease fencing, approvals, and uncertainty reconciliation. [Archived v2 verification](https://github.com/naraya07pedro-spec/agent-runtime-python/tree/f664908dcf5075616cdb9d469208529c3a69b078/evidence/v2) includes 261 passing tests. |
-| **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript / PostgreSQL. Signed webhook intake, atomic event reservation and bounded retries. [Concurrency test](https://github.com/naraya07pedro-spec/production-integration-reference/blob/355e853fbb8af03b37b3b62eee20389e84c3e02e/tests/db/postgres.test.ts) exercises 12 duplicate requests against a controlled downstream fixture. |
-| **[Full-Stack AI Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console)** | Next.js / Fastify / Prisma. Workflow versions, permissions, human approvals, leased workers and recovery. Tests use a deterministic HTTP sandbox, not a live production LLM. |
-| **[Knowledge Workflow Runtime](https://github.com/naraya07pedro-spec/varevant.com/tree/6420665ccf54a6246278ca5c6a04781e94f42261/examples/agentic-systems-lab/knowledge-runtime)** | FastAPI / pgvector / MCP. Versioned retrieval, citation revalidation, deletion handling and permission-scoped tools. [Verification](https://github.com/naraya07pedro-spec/varevant.com/blob/6420665ccf54a6246278ca5c6a04781e94f42261/examples/agentic-systems-lab/knowledge-runtime/docs/verification.md) includes 12 synthetic retrieval cases. |
+**Start here:** [Exact-revision engineering evidence and reviewer paths](ENGINEERING-EVIDENCE.md). Each link separates implementation, tests, current-as-of-13-November CI and unverified production claims.
+
+| Priority | Project | Implementation and reproducible review |
+| --- | --- | --- |
+| **Flagship 1** | **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** | Python / FastAPI / PostgreSQL: durable intent, tenant permissions, approvals, worker fencing and uncertain-effect reconciliation. [Main CI at `976d2d8`](https://github.com/naraya07pedro-spec/agent-runtime-python/actions/runs/43427999254) · [failure tests](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/976d2d8f39133fb6f2c1f5bbe194d0222014eb00/tests/failure_injection/test_process_death.py). The separate v2 archive retains **261 tests / 90.01% coverage**; those figures are not claimed for current main. |
+| **Flagship 2** | **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript / PostgreSQL: timestamp-bound HMAC, atomic reservation, classified retries, bounded provider response and reconciliation limits. [Main CI at `c0f3bcf`](https://github.com/naraya07pedro-spec/production-integration-reference/actions/runs/43417335352) · [real database contention tests](https://github.com/naraya07pedro-spec/production-integration-reference/blob/c0f3bcf94af4e368bd20e74b904c6dc278e1c5d4/tests/db/postgres.test.ts). Provider-enforced idempotency remains an external contract. |
+| **Flagship 3** | **[Full-Stack AI Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console)** | Next.js / Fastify / Prisma / PostgreSQL: versioned workflows, owner/role authorization, human approval, leased workers and recovery. [Main CI at `046d6c7`](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/actions/runs/43428368237) · [negative-case tests](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console/blob/046d6c7f062d88fb811491537e97849a33d4b610/tests/integration/system.test.ts). HTTP triage is a deterministic sandbox, not a live production LLM. |
+| **Candidate** | **[RepoPilot AI](https://github.com/naraya07pedro-spec/repopilot-ai)** | Local-first, review-first coding proposals with bounded execution and manual publication gates. [Main CI at `0936be4`](https://github.com/naraya07pedro-spec/repopilot-ai/actions/runs/43424724046) · [draft release candidate](https://github.com/naraya07pedro-spec/repopilot-ai/pull/10). No general hostile-code sandbox or autonomous production publication claim. |
+| **Supporting** | **[Knowledge Workflow Runtime](https://github.com/naraya07pedro-spec/varevant.com/tree/main/examples/agentic-systems-lab/knowledge-runtime)** | FastAPI / pgvector / MCP, source versioning and citation validation. [Historical synthetic retrieval verification](https://github.com/naraya07pedro-spec/varevant.com/blob/829711f66a3b65f7d8e819a6c3144b7f2d044a57/examples/agentic-systems-lab/knowledge-runtime/docs/verification.md); not a live search-quality or production-use assertion. |
 
 ## Professional work
 
-**VAREVANT | Independent AI Automation & Backend Engineer** (Jul 2026–present)
+**VAREVANT | Independent AI Automation & Backend Engineer** (Jul 2026–present; owner-described professional scope)
 
-I develop integration and workflow automation for operational processes, including validation, deterministic controls and recovery paths.
+I work on API integration and workflow automation where authorization, validation and recovery matter.
 
-- **PT Geget Gigit, Indonesia:** built LinkedIn, email and website outreach/follow-up workflows. The engagement contributed to approximately **2× lead volume**, as reported by the client/project owner.
-- **EZUmrah, Malaysia:** integrated **21+ operational workflows** into a centralized AI-assisted command center to improve coordination, exception visibility and process monitoring.
+- **PT Geget Gigit, Indonesia:** a marketing-automation and decision-workflow engagement described by the project owner.
+- **EZUmrah, Malaysia:** an end-to-end operational workflow integration engagement described by the project owner.
 
-Client engagement outcomes are described from project experience; confidential customer systems and credentials are not public.
+**Evidence boundary:** the two client descriptions are self-reported scope, **not independently confirmed client-origin handoffs or ROI measurements**. The separate [client evidence notes](CLIENT-WORK.md) explain precisely what can and cannot be published. Public flagship tests demonstrate reference engineering, not either customer's deployment, performance or revenue.
 
 ## Technical focus
 
