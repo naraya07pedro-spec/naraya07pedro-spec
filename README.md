@@ -18,7 +18,7 @@ Public, working sites I built. Client source code is not published.
 | **[Prestige Autodetailing](https://prestigeautodetailing.id)** | Service catalogue, pricing, project showcase, testimonials and FAQ with WhatsApp booking. HTML, CSS, JavaScript. |
 | **[DaddySuperClean](https://daddysuperclean.com)** | Service pages and customer-service contact flows for a cleaning company. WordPress and Elementor. |
 | **[Rerotian Solo](https://rerotiansolo.netlify.app)** | Single-page storefront for a home bakery with WhatsApp ordering. |
-| **[WellnessHubID](https://wellnesshubid.netlify.app)** | My own wellness web app: calorie calculator, meal and training modules, habit tracking. React, Vite, also shipped as an Android APK. |
+| **[WellnessHubID](https://wellnesshubid.netlify.app)** | My own wellness web app: calorie calculator, meal and training modules, habit tracking and Future Map. HTML, CSS, vanilla JavaScript and local browser storage. [Source and setup](https://github.com/naraya07pedro-spec/wellnesshubid). |
 
 ## Selected engineering work
 
