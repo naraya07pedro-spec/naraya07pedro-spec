@@ -1,12 +1,24 @@
 # Evan Naraya
 
-**Backend & Integration Engineer** · Python · TypeScript · Applied AI Systems
+**Full-Stack Engineer** · TypeScript · Next.js · Python · FastAPI · PostgreSQL
 
 Based in Magelang, Indonesia (UTC+7). Open to international remote engineering roles and contracts.
 
-I build Python and TypeScript systems where an API call is only one part of the job: requests need validation, state needs persistence, approvals need boundaries, and failures need a recovery path.
+I build client websites, the APIs behind them and the automation that follows up. An API call is only one part of the job: requests need validation, state needs persistence, approvals need boundaries, and failures need a recovery path.
 
 **[Engineering portfolio](https://evannaraya.com/)** · **[CV](https://evannaraya.com/cv/)** · **[LinkedIn](https://www.linkedin.com/in/evannaraya)** · **[Email](mailto:evannarayahp@gmail.com)**
+
+## Live client websites
+
+Public, working sites I built. Client source code is not published.
+
+| Site | What I built |
+| --- | --- |
+| **[Geget Gigit](https://gegetgigit.com)** | Company website for a corporate events and exhibitions business: service pages, case studies and a project-brief form that hands off to WhatsApp. Same engagement as the n8n lead automation below. |
+| **[Prestige Autodetailing](https://prestigeautodetailing.id)** | Service catalogue, pricing, project showcase, testimonials and FAQ with WhatsApp booking. HTML, CSS, JavaScript. |
+| **[DaddySuperClean](https://daddysuperclean.com)** | Service pages and customer-service contact flows for a cleaning company. WordPress and Elementor. |
+| **[Rerotian Solo](https://rerotiansolo.netlify.app)** | Single-page storefront for a home bakery with WhatsApp ordering. |
+| **[WellnessHubID](https://wellnesshubid.netlify.app)** | My own wellness web app: calorie calculator, meal and training modules, habit tracking. React, Vite, also shipped as an Android APK. |
 
 ## Selected engineering work
 
@@ -22,16 +34,18 @@ I build Python and TypeScript systems where an API call is only one part of the 
 
 ## Professional work
 
-**VAREVANT | Independent AI Automation & Backend Engineer** (Jul 2026–present; owner-described professional scope)
+**VAREVANT | Independent Full-Stack Engineer** (Jul 2026–present; owner-described professional scope)
 
-I work on API integration and workflow automation where authorization, validation and recovery matter.
+I build websites and the API integration and workflow automation behind them, where authorization, validation and recovery matter.
 
-- **PT Geget Gigit, Indonesia:** a marketing-automation and decision-workflow engagement described by the project owner.
+- **PT Geget Gigit, Indonesia:** the company website plus a marketing-automation and lead-follow-up engagement described by the project owner.
 - **EZUmrah, Malaysia:** an end-to-end operational workflow integration engagement described by the project owner.
 
-**Evidence boundary:** the two client descriptions are self-reported scope, **not independently confirmed client-origin handoffs or ROI measurements**. The separate [client evidence notes](CLIENT-WORK.md) explain precisely what can and cannot be published. Public flagship tests demonstrate reference engineering, not either customer's deployment, performance or revenue.
+**Evidence boundary:** the websites above are public and can be opened. The automation descriptions for the two clients are self-reported scope, **not independently confirmed client-origin handoffs or ROI measurements**. The separate [client evidence notes](CLIENT-WORK.md) explain precisely what can and cannot be published. Public flagship tests demonstrate reference engineering, not either customer's deployment, performance or revenue.
 
 ## Technical focus
+
+**Frontend:** TypeScript, React, Next.js, HTML, CSS, responsive design, WordPress and Elementor.
 
 **Backend and integrations:** Python, FastAPI, Pydantic, SQLAlchemy, TypeScript, Fastify, REST APIs, webhooks, PostgreSQL, Supabase, Prisma and n8n.
 

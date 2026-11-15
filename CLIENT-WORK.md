@@ -18,6 +18,10 @@ Evan's scope statement describes the type of system he says he designed and impl
 
 Specific connected applications, data contracts, retry behavior, approval controls and handoff artifacts are not publicly documented; no booking, cost-saving or revenue result is claimed.
 
+## Public websites
+
+Separate from the automation notes above, the websites I built are publicly reachable and can be inspected directly: [gegetgigit.com](https://gegetgigit.com), [prestigeautodetailing.id](https://prestigeautodetailing.id), [daddysuperclean.com](https://daddysuperclean.com) and [rerotiansolo.netlify.app](https://rerotiansolo.netlify.app). Client source code is not published. The Geget Gigit role is Freelance Full-Stack Engineer: the website plus the automation described above.
+
 ## Available evidence
 
 | Review question | Public evidence now |
