@@ -2,7 +2,7 @@
 
 **Full-Stack Engineer** · TypeScript · Next.js · Python · FastAPI · PostgreSQL
 
-Based in Magelang, Indonesia (UTC+7). Open to international remote engineering roles and contracts.
+Open to international remote engineering roles and contracts.
 
 I build client websites, the APIs behind them and the automation that follows up. An API call is only one part of the job: requests need validation, state needs persistence, approvals need boundaries, and failures need a recovery path.
 
