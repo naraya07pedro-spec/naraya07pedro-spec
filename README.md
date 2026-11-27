@@ -1,48 +1,49 @@
 # Evan Naraya
 
-**Front-End / Full-Stack Developer** · React · Next.js · TypeScript · Python · FastAPI
+**Full-Stack Engineer · Web applications, backend systems & AI integrations**
 
-I build client websites and web apps, and I can also build the API and automation behind them. Open to remote contract and full-time roles.
+I build web applications and the APIs, data systems and automation behind them, with a focus on reliable workflows, clear interfaces and recoverable failure paths. Open to remote full-time roles and contracts.
 
-**[Portfolio](https://evannaraya.com/)** · **[CV](https://evannaraya.com/cv/)** · **[LinkedIn](https://www.linkedin.com/in/evannaraya)** · **[Email](mailto:evannarayahp@gmail.com)**
+[Portfolio](https://evannaraya.com/) · [CV](https://evannaraya.com/cv/) · [LinkedIn](https://www.linkedin.com/in/evannaraya) · [Email](mailto:evannarayahp@gmail.com)
 
-## Live websites you can open
+## Selected engineering projects
 
-| Site | What I built |
-| --- | --- |
-| **[Geget Gigit](https://gegetgigit.com)** | Company website for a corporate events and exhibitions business: service pages, case studies and a project-brief form that hands off to WhatsApp. HTML, CSS, JavaScript. |
-| **[Prestige Autodetailing](https://prestigeautodetailing.id)** | Service catalogue, pricing, project showcase, testimonials and FAQ with WhatsApp booking. HTML, CSS, JavaScript. |
-| **[DaddySuperClean](https://daddysuperclean.com)** | Service pages and contact flows for a cleaning company. WordPress and Elementor. |
-| **[Rerotian Solo](https://rerotiansolo.netlify.app)** | Single-page storefront for a home bakery with WhatsApp ordering. |
-| **[WellnessHubID](https://wellnesshubid.netlify.app)** | My own wellness web app: calorie calculator, meal and training guides, habit tracking and goal planning. Installable PWA in HTML, CSS and JavaScript. [Source](https://github.com/naraya07pedro-spec/wellnesshubid). |
+Public, runnable engineering references with synthetic data, documented architecture and reproducible review paths.
 
-6 client websites delivered since July 2026; the 4 client sites above are live today.
+### Full-stack & backend systems
 
-## Selected projects
+- **[FieldSync](https://github.com/naraya07pedro-spec/fieldsync)** · TypeScript, Next.js, Fastify, PostgreSQL  
+  Offline-first collaboration with IndexedDB queues, durable mutation receipts and explicit conflict resolution. [Browser walkthrough](https://github.com/naraya07pedro-spec/fieldsync/blob/5a3e685e2c9af4fd8cb2bc5cc8c9b228f0251ac1/docs/demo.md)
+- **[LedgerCore](https://github.com/naraya07pedro-spec/ledgercore)** · Go, PostgreSQL, Next.js  
+  Synthetic double-entry ledger with immutable journals, concurrent posting, reversals and reconciliation. [Verification evidence](https://github.com/naraya07pedro-spec/ledgercore/blob/a2ed72a6709892760ed4aaaaf501e9bca2941580/docs/evidence.md) · [Benchmarks](https://github.com/naraya07pedro-spec/ledgercore/blob/a2ed72a6709892760ed4aaaaf501e9bca2941580/docs/benchmark.md)
 
-| Project | Stack | What it shows |
-| --- | --- | --- |
-| **[Full-Stack AI Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console)** | Next.js · React · TypeScript · Fastify · Prisma · PostgreSQL | A working dashboard for workflows, approvals, execution history and recovery, on desktop and mobile. Reviewed CI run: 58 system checks and 20 browser cases. The AI step is a deterministic sandbox, not a live LLM. |
-| **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** | TypeScript · PostgreSQL | Signed webhook intake, duplicate protection with a unique database reservation, and bounded retries. |
-| **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** | Python · FastAPI · PostgreSQL | Agent actions held for approval, with recovery when an external call's outcome is unknown. v2 archive: 261 passing tests. |
+### AI application engineering
 
-More detail per project, including CI links: [engineering evidence](ENGINEERING-EVIDENCE.md).
+- **[AgentProof](https://github.com/naraya07pedro-spec/agentproof)** · Python, FastAPI, PostgreSQL, Next.js  
+  Versioned agent evaluations, policy-gated tool calls, regression checks and a dashboard for comparing stored runs. [Evidence](https://github.com/naraya07pedro-spec/agentproof/blob/8810c52259819d2c6790fa451a7607f93a29653a/docs/evidence.md) (scripted benchmarks; live providers unverified).
+- **[Bounded Agent Runtime](https://github.com/naraya07pedro-spec/agent-runtime-python)** · Python, FastAPI, PostgreSQL  
+  Durable agent execution, tenant authorization, human approval and recovery of uncertain external effects. [Architecture](https://github.com/naraya07pedro-spec/agent-runtime-python/blob/976d2d8f39133fb6f2c1f5bbe194d0222014eb00/docs/architecture.md)
 
-## Client work
+### Integrations & automation
 
-Freelance engagements through VAREVANT, my independent practice:
+- **[Production Integration Reference](https://github.com/naraya07pedro-spec/production-integration-reference)** · TypeScript, PostgreSQL  
+  Signed webhooks, atomic deduplication, bounded retries and persisted outcomes. [Reliability review](https://github.com/naraya07pedro-spec/production-integration-reference/blob/e7f7bf68b24beb675557c04e09f7064d411f5dae/docs/RELIABILITY-REVIEW.md)
+- **[Speed-to-Lead Engine](https://github.com/naraya07pedro-spec/speed-to-lead-engine)** · Python, FastAPI, SQLite  
+  Lead intake, triage, follow-up escalation and response-time reporting; offline demo with optional Twilio and HubSpot adapters. [Architecture](https://github.com/naraya07pedro-spec/speed-to-lead-engine/blob/4fa9bb1931a2e169dae5f884468231ce81902c38/docs/architecture.md)
 
-- **PT Geget Gigit (Indonesia):** company website plus n8n workflows connecting LinkedIn, email and the website for lead generation and follow-up, contributing to approximately 2x lead volume.
-- **EZUmrah (Malaysia):** integrated 21 operational workflows into one AI-assisted command center.
+**[Engineering evidence index](ENGINEERING-EVIDENCE.md)** · CI links, checked revisions, failure-path evidence and limitations.
 
-Client automation source is private. Notes on what can be published: [client work](CLIENT-WORK.md).
+Also: [Full-Stack AI Operations Console](https://github.com/naraya07pedro-spec/fullstack-ai-operations-console) (workflow approvals and execution history) · [RepoPilot AI](https://github.com/naraya07pedro-spec/repopilot-ai) (experimental review-first coding workflow).
 
-## Stack
+## Professional work
 
-**Frontend:** React, Next.js, TypeScript, JavaScript, HTML, CSS, responsive design, PWA, WordPress, Elementor.
+Independent Full-Stack Engineer through **VAREVANT**, working on client websites, web applications and business automation. Selected public websites: [Geget Gigit](https://gegetgigit.com), [Prestige Autodetailing](https://prestigeautodetailing.id), [DaddySuperClean](https://daddysuperclean.com), [Rerotian Solo](https://rerotiansolo.netlify.app). Personal project: [WellnessHubID](https://github.com/naraya07pedro-spec/wellnesshubid).
 
-**Backend:** Python, FastAPI, Node.js, Fastify, REST APIs, webhooks, PostgreSQL, Supabase, Prisma.
+[Client work and evidence scope](CLIENT-WORK.md) describes the PT Geget Gigit and EZUmrah engagements separately from public reference implementations.
 
-**Automation and delivery:** n8n, API integration, Playwright, pytest, Docker, GitHub Actions.
+## Technical focus
 
-**[See the portfolio](https://evannaraya.com/)** or **[email me](mailto:evannarayahp@gmail.com)**.
+**Frontend:** React, Next.js, TypeScript, JavaScript, responsive web development.  
+**Backend & data:** Python, FastAPI, Node.js, Fastify, PostgreSQL, REST APIs, webhooks.  
+**Integration & delivery:** n8n, Docker, GitHub Actions, pytest, Playwright.  
+**Additional project language:** Go (LedgerCore).
